@@ -1,0 +1,259 @@
+Script started on Friday 31 January 2020 02:26:46 PM IST
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ pwd
+/home/s4c2/ceccs18c11/cs232
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ mkj[Kdir fosslab
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ cd fosslab
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/fosslab[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/fosslab[00m$ cd ..
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ ls
+[0m[01;34mfosslab[0m  README.md  [01;34mtestfolder[0m  test.txt  work.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ ls -l
+total 16
+drwxrwxr-x 2 s4c2 s4c2 4096 Jan 31 14:27 [0m[01;34mfosslab[0m
+-rw-rw-r-- 1 s4c2 s4c2    7 Jan 31 14:17 README.md
+drwxrwxr-x 2 s4c2 s4c2 4096 Jan 31 14:11 [01;34mtestfolder[0m
+-rw-rw-r-- 1 s4c2 s4c2   25 Jan 31 14:18 test.txt
+-rw-rw-r-- 1 s4c2 s4c2    0 Jan 31 14:26 work.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ gedit woe[Krl[Kk.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ exiy[K[K[K[Kman rn
+No manual entry for rn
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ man rm
+[?1049h[?1h=RM(1)                                                          User Commands                                                          RM(1)[m
+[m
+[1mNAME[0m[m
+       rm - remove files or directories[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mrm[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       This manual page documents the GNU version of [1mrm[0m.  [1mrm[0m removes each specified file.  By default, it does not remove directories.[m
+[m
+       If  the  [4m-I[24m or [4m--interactive=once[24m option is given, and there are more than three files or the [4m-r[24m, [4m-R[24m, or [4m--recursive[24m are given, then[m
+       [1mrm[0m prompts the user for whether to proceed with the entire operation.  If the response is not affirmative,  the  entire  command  is[m
+       aborted.[m
+[m
+       Otherwise, if a file is unwritable, standard input is a terminal, and the [4m-f[24m or [4m--force[24m option is not given, or the [4m-i[24m or [4m--interac‐[24m[m
+       [4mtive=always[24m option is given, [1mrm[0m prompts the user for whether to remove the file.  If the response is not affirmative,  the  file  is[m
+       skipped.[m
+[m
+[1mOPTIONS[0m[m
+       Remove (unlink) the FILE(s).[m
+[m
+       [1m-f[0m, [1m--force[0m[m
+              ignore nonexistent files and arguments, never prompt[m
+[m
+       [1m-i[0m     prompt before every removal[m
+[m
+       [1m-I[0m     prompt  once  before removing more than three files, or when removing recursively; less intrusive than [1m-i[0m, while still giving[m
+              protection against most mistakes[m
+[m
+       [1m--interactive[0m[=[4mWHEN[24m][m
+              prompt according to WHEN: never, once ([1m-I[0m), or always ([1m-i[0m); without WHEN, prompt always[m
+[m
+       [1m--one-file-system[0m[m
+              when removing a hierarchy recursively, skip any directory that is on a file system different from that of  the  corresponding[m
+              command line argument[m
+[m
+       [1m--no-preserve-root[0m[m
+              do not treat '/' specially[m
+[m
+       [1m--preserve-root[0m[m
+              do not remove '/' (default)[m
+[7m Manual page rm(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-r[0m, [1m-R[0m, [1m--recursive[0m[m
+[7m Manual page rm(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              remove directories and their contents recursively[m
+[7m Manual page rm(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--dir[0m[m
+[7m Manual page rm(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              remove empty directories[m
+[7m Manual page rm(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-v[0m, [1m--verbose[0m[m
+[7m Manual page rm(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              explain what is being done[m
+[7m Manual page rm(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--help[0m display this help and exit[m
+[7m Manual page rm(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--version[0m[m
+[7m Manual page rm(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              output version information and exit[m
+[7m Manual page rm(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       By  default, rm does not remove directories.  Use the [1m--recursive[0m ([1m-r[0m or [1m-R[0m) option to remove each listed directory, too, along with[m
+[7m Manual page rm(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       all of its contents.[m
+[7m Manual page rm(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       To remove a file whose name starts with a '-', for example '-foo', use one of these commands:[m
+[7m Manual page rm(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              rm [1m--[0m [1m-foo[0m[m
+[7m Manual page rm(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              rm ./-foo[m
+[7m Manual page rm(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Note that if you use rm to remove a file, it might be possible to recover some of its contents, given  sufficient  expertise  and/or[m
+[7m Manual page rm(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       time.  For greater assurance that the contents are truly unrecoverable, consider using shred.[m
+[7m Manual page rm(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page rm(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written by Paul Rubin, David MacKenzie, Richard M. Stallman, and Jim Meyering.[m
+[7m Manual page rm(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREPORTING[0m [1mBUGS[0m[m
+[7m Manual page rm(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU coreutils online help: <http://www.gnu.org/software/coreutils/>[m
+[7m Manual page rm(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report rm translation bugs to <http://translationproject.org/team/>[m
+[7m Manual page rm(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOPYRIGHT[0m[m
+[7m Manual page rm(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Copyright © 2016 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.[m
+[7m Manual page rm(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.[m
+[7m Manual page rm(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page rm(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       unlink(1), unlink(2), chattr(1), shred(1)[m
+[7m Manual page rm(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Full documentation at: <http://www.gnu.org/software/coreutils/rm>[m
+[7m Manual page rm(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or available locally via: info '(coreutils) rm invocation'[m
+[7m Manual page rm(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page rm(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU coreutils 8.25                                             February 2017                                                          RM(1)[m
+[7m Manual page rm(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page rm(1) line 46/87 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ rm fosslab [K[K[K[K[K[K[K[K[K[K[Kman rm
+[?1049h[?1h=RM(1)                                                          User Commands                                                          RM(1)[m
+[m
+[1mNAME[0m[m
+       rm - remove files or directories[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mrm[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       This manual page documents the GNU version of [1mrm[0m.  [1mrm[0m removes each specified file.  By default, it does not remove directories.[m
+[m
+       If  the  [4m-I[24m or [4m--interactive=once[24m option is given, and there are more than three files or the [4m-r[24m, [4m-R[24m, or [4m--recursive[24m are given, then[m
+       [1mrm[0m prompts the user for whether to proceed with the entire operation.  If the response is not affirmative,  the  entire  command  is[m
+       aborted.[m
+[m
+       Otherwise, if a file is unwritable, standard input is a terminal, and the [4m-f[24m or [4m--force[24m option is not given, or the [4m-i[24m or [4m--interac‐[24m[m
+       [4mtive=always[24m option is given, [1mrm[0m prompts the user for whether to remove the file.  If the response is not affirmative,  the  file  is[m
+       skipped.[m
+[m
+[1mOPTIONS[0m[m
+       Remove (unlink) the FILE(s).[m
+[m
+       [1m-f[0m, [1m--force[0m[m
+              ignore nonexistent files and arguments, never prompt[m
+[m
+       [1m-i[0m     prompt before every removal[m
+[m
+       [1m-I[0m     prompt  once  before removing more than three files, or when removing recursively; less intrusive than [1m-i[0m, while still giving[m
+              protection against most mistakes[m
+[m
+       [1m--interactive[0m[=[4mWHEN[24m][m
+              prompt according to WHEN: never, once ([1m-I[0m), or always ([1m-i[0m); without WHEN, prompt always[m
+[m
+       [1m--one-file-system[0m[m
+              when removing a hierarchy recursively, skip any directory that is on a file system different from that of  the  corresponding[m
+              command line argument[m
+[m
+       [1m--no-preserve-root[0m[m
+              do not treat '/' specially[m
+[m
+       [1m--preserve-root[0m[m
+              do not remove '/' (default)[m
+[7m Manual page rm(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ rm fosslab
+rm: cannot remove 'fosslab': Is a directory
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ gedit filetobr[Kedeleted.txt_deleted.txt[C_be_deleted.txt_to_be_deleted.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ rm file_to_be_deld[Keted.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ ls -l
+total 40
+drwxrwxr-x 2 s4c2 s4c2  4096 Jan 31 14:27 [0m[01;34mfosslab[0m
+-rw-rw-r-- 1 s4c2 s4c2     7 Jan 31 14:17 README.md
+drwxrwxr-x 2 s4c2 s4c2  4096 Jan 31 14:11 [01;34mtestfolder[0m
+-rw-rw-r-- 1 s4c2 s4c2    25 Jan 31 14:18 test.txt
+-rw-rw-r-- 1 s4c2 s4c2 24576 Jan 31 14:31 work.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ locate test.txt
+/usr/share/plainbox-provider-checkbox/jobs/panel_clock_test.txt.in
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ man mv
+[?1049h[?1h=MV(1)                                                          User Commands                                                          MV(1)[m
+[m
+[1mNAME[0m[m
+       mv - move (rename) files[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmv[0m [[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[24m[m
+       [1mmv[0m [[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[24m[m
+       [1mmv[0m [[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m--backup[0m[=[4mCONTROL[24m][m
+              make a backup of each existing destination file[m
+[m
+       [1m-b[0m     like [1m--backup[0m but does not accept an argument[m
+[m
+       [1m-f[0m, [1m--force[0m[m
+              do not prompt before overwriting[m
+[m
+       [1m-i[0m, [1m--interactive[0m[m
+              prompt before overwrite[m
+[m
+       [1m-n[0m, [1m--no-clobber[0m[m
+              do not overwrite an existing file[m
+[m
+       If you specify more than one of [1m-i[0m, [1m-f[0m, [1m-n[0m, only the final one takes effect.[m
+[m
+       [1m--strip-trailing-slashes[0m[m
+              remove any trailing slashes from each SOURCE argument[m
+[m
+       [1m-S[0m, [1m--suffix[0m=[4mSUFFIX[24m[m
+              override the usual backup suffix[m
+[m
+       [1m-t[0m, [1m--target-directory[0m=[4mDIRECTORY[24m[m
+              move all SOURCE arguments into DIRECTORY[m
+[m
+       [1m-T[0m, [1m--no-target-directory[0m[m
+              treat DEST as a normal file[m
+[7m Manual page mv(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ mv fosslab fosslab1
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ cd fosslab1
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/fosslab1[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/fosslab1[00m$ cd ..
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ man grep
+[?1049h[?1h=GREP(1)                                                   General Commands Manual                                                   GREP(1)[m
+[m
+[1mNAME[0m[m
+       grep, egrep, fgrep, rgrep - print lines matching a pattern[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mgrep[0m [[4mOPTIONS[24m] [4mPATTERN[24m [[4mFILE[24m...][m
+       [1mgrep[0m [[4mOPTIONS[24m] [[1m-e[0m [4mPATTERN[24m]...  [[1m-f[0m [4mFILE[24m]...  [[4mFILE[24m...][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mgrep[0m  searches  the  named input [4mFILE[24ms for lines containing a match to the given [4mPATTERN[24m.  If no files are specified, or if the file[m
+       “[1m-[0m” is given, [1mgrep[0m searches standard input.  By default, [1mgrep[0m prints the matching lines.[m
+[m
+       In addition, the variant programs [1megrep[0m, [1mfgrep[0m and [1mrgrep[0m are the  same  as  [1mgrep[0m [1m-E[0m,  [1mgrep[0m [1m-F[0m,  and  [1mgrep[0m [1m-r[0m,  respectively.   These[m
+       variants are deprecated, but are provided for backward compatibility.[m
+[m
+[1mOPTIONS[0m[m
+   [1mGeneric[0m [1mProgram[0m [1mInformation[0m[m
+       [1m--help[0m Output a usage message and exit.[m
+[m
+       [1m-V[0m, [1m--version[0m[m
+              Output the version number of [1mgrep[0m and exit.[m
+[m
+   [1mMatcher[0m [1mSelection[0m[m
+       [1m-E[0m, [1m--extended-regexp[0m[m
+              Interpret [4mPATTERN[24m as an extended regular expression (ERE, see below).[m
+[m
+       [1m-F[0m, [1m--fixed-strings[0m[m
+              Interpret  [4mPATTERN[24m  as a list of fixed strings (instead of regular expressions), separated by newlines, any of which is to be[m
+              matched.[m
+[m
+       [1m-G[0m, [1m--basic-regexp[0m[m
+              Interpret [4mPATTERN[24m as a basic regular expression (BRE, see below).  This is the default.[m
+[m
+       [1m-P[0m, [1m--perl-regexp[0m[m
+              Interpret the pattern as a Perl-compatible regular expression (PCRE).  This is highly experimental and [1mgrep[0m [1m-P[0m  may  warn  of[m
+              unimplemented features.[m
+[m
+   [1mMatching[0m [1mControl[0m[m
+       [1m-e[0m [4mPATTERN[24m, [1m--regexp=[0m[4mPATTERN[24m[m
+              Use [4mPATTERN[24m as the pattern.  If this option is used multiple times or is combined with the [1m-f[0m ([1m--file[0m) option, search for all[m
+              patterns given.  This option can be used to protect a pattern beginning with “-”.[m
+[7m Manual page grep(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ gedit m[Knewfile.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ grep new[K[K[K[K f[Kthe nw=ew[K[K[K[Kewfile.txt
+Free and open-source software (FOSS) is software that can be classified as both free software and open-source software.[a] That is, anyone is freely licensed to use, copy, study, and change [01;31m[Kthe[m[K software in any way, and [01;31m[Kthe[m[K source code is openly shared so that people are encouraged to voluntarily improve [01;31m[Kthe[m[K design of [01;31m[Kthe[m[K software.[3] This is in contrast to proprietary software, where [01;31m[Kthe[m[K software is under restrictive copyright licensing and [01;31m[Kthe[m[K source code is usually hidden from [01;31m[Kthe[m[K users.
+FOSS maintains [01;31m[Kthe[m[K software user's civil liberty rights (see [01;31m[Kthe[m[K Four Essential Freedoms, below). O[01;31m[Kthe[m[Kr benefits of using FOSS can include decreased software costs, increased security and stability (especially in regard to malware), protecting privacy, education, and giving users more control over [01;31m[Kthe[m[Kir own hardware. Free and open-source operating systems such as Linux and descendants of BSD are widely utilized today, powering millions of servers, desktops, smartphones (e.g. Android), and o[01;31m[Kthe[m[Kr devices.[4][5] Free-software licenses and open-source licenses are used by many software packages. The free-software movement and [01;31m[Kthe[m[K open-source software movement are online social movements behind widespread production and adoption of FOSS. 
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232[00m$ exit
+exit
+
+Script done on Friday 31 January 2020 02:41:20 PM IST
