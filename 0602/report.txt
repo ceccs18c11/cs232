@@ -1,0 +1,60 @@
+CEC CS 18 c11
+Arjun G Krishna
+
+Date:31/01/2020
+--------------------------------
+#1: Aim/task: Familiarisation of linux commands
+---------------------------------
+Command/Shell script/Program name:work.txt
+---------------------------------
+
+Input: (If relevant)
+---------------
+
+work.txt
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+None 
+
+-------------------
+Remarks if any:
+
+Familiarised with some linux commands line pwd, cd, 
+mkdir, mv, grep etc
+
+
+
+
+-------------------------------------
+Date: 06/02/2020
+-------------------------------------
+#2:Aim/task: Scripting Task
+-------------------------------------
+
+Command/Shell script program name: awk,python,grep
+-------------------------------------
+
+Input: result_CHN.pdf
+
+-------------------------------------
+Processes used: 
+-------------------------------------
+
+Used pdftotext -layout to convert result_CHN.pdf to a text file 
+while maintaining the original layout of the document.
+
+Used awk to isolate the Computer Science students to a separate txt file.
+Similiar use of awk to isolate the passed students to another separate txt file
+
+Used a python script to calculate the sgpa of the students
+(script.py)
+----------------------------------------
+Output:
+----------------------------------------	
+#3:
+
+#4:
+
+#5:
