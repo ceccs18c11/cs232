@@ -1,0 +1,226 @@
+Script started on Monday 17 February 2020 01:56:55 PM IST
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ ssh 192.168.0.30c192.168.0.30s192.168.0.30[C192.168.0.308192.168.0.30c192.168.0.30[C192.168.0.30[C192.168.0.30@192.168.0.30[C[C[C[C[C[C[C[C[C[C[C[C
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c11@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+402 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Feb 17 09:12:33 2020 from 192.168.0.77
+$ echo he;;  llo
+hello
+$ ls _ -l
+total 364
+-rw-r--r-- 1 cs18c11 cs18   8980 Apr 20  2016 examples.desktop
+-rw-r--r-- 1 cs18c11 cs18  11971 Feb  7 11:59 final.txt
+-rw-r--r-- 1 cs18c11 cs18   4105 Feb  7 12:08 grades.txt
+-rw-r--r-- 1 cs18c11 cs18   4105 Feb  7 12:00 marks1.txt
+-rw-r--r-- 1 cs18c11 cs18   6921 Feb  7 12:07 pass.txt
+-rw-r--r-- 1 cs18c11 cs18   1314 Feb  7 12:21 report.txt
+-rw-r--r-- 1 cs18c11 cs18  28194 Feb  7 12:08 result_CHN.pdf
+-rw-r--r-- 1 cs18c11 cs18  47213 Feb  7 12:00 result.txt
+-rw-r--r-- 1 cs18c11 cs18    760 Feb  7 12:08 script1.py
+-rw-r--r-- 1 cs18c11 cs18  97688 Feb  7 12:08 work2.txt
+-rw-r--r-- 1 cs18c11 cs18 139264 Feb  7 12:00 work.txt
+$ cat [pa   oaq   pass.tct  xr t
+CHN18CS003   MA101(A+), PH100(A+), BE110(O), BE10105(O), BE103(A), EE100(O), PH110(A+), EE110(A),
+CHN18CS004   MA101(B+), PH100(A), BE110(O), BE10105(O), BE103(B), EE100(A+), PH110(A+), EE110(A),
+CHN18CS005   MA101(C), PH100(C), BE110(O), BE10105(B), BE103(B+), EE100(B+), PH110(A+), EE110(A),
+CHN18CS007   MA101(B+), PH100(B), BE110(O), BE10105(A+), BE103(B), EE100(B+), PH110(A+), EE110(A+),
+CHN18CS008   MA101(B), PH100(C), BE110(B+), BE10105(A+), BE103(B), EE100(B), PH110(A+), EE110(A),
+CHN18CS009   MA101(A+), PH100(O), BE110(A+), BE10105(B), BE103(A), EE100(A+), PH110(A), EE110(B+),
+CHN18CS010   MA101(O), PH100(A+), BE110(O), BE10105(A), BE103(B+), EE100(A+), PH110(A), EE110(A),
+CHN18CS012   MA101(B), PH100(B+), BE110(A+), BE10105(C), BE103(B+), EE100(B+), PH110(A+),
+CHN18CS016   MA101(B+), PH100(O), BE110(O), BE10105(B), BE103(B), EE100(A), PH110(A+), EE110(A+),
+CHN18CS017   MA101(B+), PH100(B+), BE110(A+), BE10105(A+), BE103(B+), EE100(B+), PH110(O),
+CHN18CS018   MA101(O), PH100(O), BE110(O), BE10105(O), BE103(B+), EE100(A+), PH110(A+), EE110(B+),
+CHN18CS020   MA101(A), PH100(A+), BE110(O), BE10105(B+), BE103(B+), EE100(O), PH110(O), EE110(A),
+CHN18CS021   MA101(B), PH100(A+), BE110(O), BE10105(B+), BE103(A), EE100(B+), PH110(A+), EE110(A),
+CHN18CS023   MA101(C), PH100(B), BE110(A+), BE10105(A+), BE103(B), EE100(C), PH110(A+), EE110(B+),
+CHN18CS025   MA101(B), PH100(B+), BE110(A+), BE10105(B), BE103(A), EE100(B), PH110(B+), EE110(A),
+CHN18CS026   MA101(O), PH100(B+), BE110(B+), BE10105(B+), BE103(B), EE100(A+), PH110(O), EE110(B+),
+CHN18CS029   MA101(A+), PH100(A+), BE110(O), BE10105(B+), BE103(A+), EE100(O), PH110(A+), EE110(A),
+CHN18CS030   MA101(B+), PH100(B), BE110(O), BE10105(C), BE103(B), EE100(B+), PH110(A), EE110(A),
+CHN18CS032   MA101(B), PH100(A), BE110(B+), BE10105(B), BE103(B), EE100(B+), PH110(A), EE110(B+),
+CHN18CS033   MA101(O), PH100(O), BE110(O), BE10105(B+), BE103(B+), EE100(O), PH110(A+), EE110(A),
+CHN18CS035   MA101(O), PH100(A), BE110(O), BE10105(B+), BE103(B+), EE100(O), PH110(O), EE110(B+),
+CHN18CS036   MA101(B), PH100(A+), BE110(B+), BE10105(B+), BE103(A), EE100(O), PH110(A+), EE110(A),
+CHN18CS037   MA101(A+), PH100(B+), BE110(O), BE10105(C), BE103(B), EE100(A), PH110(A+), EE110(A),
+CHN18CS038   MA101(B+), PH100(A+), BE110(B+), BE10105(B), BE103(A), EE100(A+), PH110(A+), EE110(A),
+CHN18CS039   MA101(A), PH100(B), BE110(O), BE10105(C), BE103(B), EE100(B+), PH110(A+), EE110(B+),
+CHN18CS042   MA101(C), PH100(B), BE110(A), BE10105(B), BE103(B+), EE100(B+), PH110(A+), EE110(A),
+CHN18CS043   MA101(B+), PH100(B), BE110(B+), BE10105(B), BE103(B), EE100(B+), PH110(A+), EE110(A),
+CHN18CS049   MA101(A), PH100(A+), BE110(O), BE10105(B+), BE103(B), EE100(B+), PH110(A), EE110(B+),
+CHN18CS053   MA101(B), PH100(B), BE110(O), BE10105(C), BE103(B), EE100(B), PH110(A+), EE110(A),
+CHN18CS054   MA101(A+), PH100(A+), BE110(A+), BE10105(B), BE103(A), EE100(O), PH110(A+), EE110(A+),
+CHN18CS056   MA101(B), PH100(A), BE110(O), BE10105(C), BE103(B+), EE100(A+), PH110(A+), EE110(B+),
+CHN18CS057   MA101(B), PH100(B+), BE110(A), BE10105(C), BE103(B+), EE100(B), PH110(O), EE110(B+),
+CHN18CS058   MA101(A+), PH100(A), BE110(A+), BE10105(C), BE103(B+), EE100(O), PH110(A), EE110(A),
+CHN18CS059   MA101(A), PH100(A+), BE110(O), BE10105(A), BE103(A), EE100(O), PH110(O), EE110(O),
+CHN18CS062   MA101(O), PH100(A+), BE110(O), BE10105(B), BE103(B), EE100(O), PH110(A+), EE110(A),
+CHN18CS063   MA101(A+), PH100(A), BE110(A+), BE10105(B), BE103(B), EE100(A), PH110(A+), EE110(B+),
+CHN18CS068   MA101(B), PH100(B), BE110(O), BE10105(C), BE103(B), EE100(B), PH110(A), EE110(B+),
+CHN18CS069   MA101(B), PH100(B+), BE110(A+), BE10105(C), BE103(B), EE100(A+), PH110(A+), EE110(A+),
+CHN18CS072   MA101(B+), PH100(B+), BE110(A+), BE10105(A+), BE103(B+), EE100(A+), PH110(A+),
+CHN18CS073   MA101(B+), PH100(A+), BE110(A), BE10105(B+), BE103(A), EE100(O), PH110(A), EE110(A+),
+CHN18CS075   MA101(B), PH100(B), BE110(O), BE10105(B+), BE103(B), EE100(A), PH110(B+), EE110(B),
+CHN18CS077   MA101(O), PH100(O), BE110(O), BE10105(B+), BE103(A), EE100(A), PH110(A), EE110(B+),
+CHN18CS079   MA101(B+), PH100(B), BE110(A), BE10105(B), BE103(B), EE100(B), PH110(A), EE110(B+),
+CHN18CS080   MA101(O), PH100(O), BE110(O), BE10105(B+), BE103(A+), EE100(A), PH110(O), EE110(A),
+CHN18CS082   MA101(B), PH100(C), BE110(O), BE10105(A), BE103(B), EE100(C), PH110(A), EE110(B+),
+CHN18CS084   MA101(B), PH100(B), BE110(A), BE10105(B), BE103(B), EE100(C), PH110(A+), EE110(A),
+CHN18CS087   MA101(O), PH100(O), BE110(O), BE10105(A+), BE103(A), EE100(O), PH110(A+), EE110(A+),
+CHN18CS091   MA101(O), PH100(O), BE110(A+), BE10105(C), BE103(O), EE100(A), PH110(A+), EE110(A+),
+CHN18CS092   MA101(A), PH100(A+), BE110(A+), BE10105(B+), BE103(B+), EE100(A), PH110(O), EE110(A),
+CHN18CS093   MA101(O), PH100(O), BE110(O), BE10105(A+), BE103(A+), EE100(O), PH110(O), EE110(A),
+CHN18CS095   MA101(A+), PH100(A), BE110(A+), BE10105(A+), BE103(A+), EE100(O), PH110(A+), EE110(A),
+CHN18CS096   MA101(B), PH100(B), BE110(B+), BE10105(B), BE103(B+), EE100(B+), PH110(A+), EE110(B+),
+CHN18CS097   MA101(B), PH100(B), BE110(A+), BE10105(C), BE103(B), EE100(B+), PH110(O), EE110(A),
+CHN18CS099   MA101(A+), PH100(A+), BE110(A+), BE10105(B+), BE103(A), EE100(O), PH110(A+),
+CHN18CS100   MA101(B+), PH100(B+), BE110(O), BE10105(A), BE103(A+), EE100(A), PH110(A+), EE110(A),
+CHN18CS101   MA101(C), PH100(B), BE110(A), BE10105(B), BE103(B+), EE100(B+), PH110(A), EE110(A),
+CHN18CS102   MA101(B), PH100(A+), BE110(A+), BE10105(C), BE103(A), EE100(O), PH110(A), EE110(A),
+CHN18CS103   MA101(A+), PH100(A+), BE110(O), BE10105(B+), BE103(B+), EE100(A+), PH110(O),
+CHN18CS104   MA101(A), PH100(B+), BE110(O), BE10105(O), BE103(A), EE100(O), PH110(A+), EE110(B+),
+CHN18CS105   MA101(B), PH100(B+), BE110(O), BE10105(B), BE103(B+), EE100(B+), PH110(A+), EE110(A+),
+CHN18CS106   MA101(C), PH100(C), BE110(B), BE10105(C), BE103(C), EE100(B), PH110(A), EE110(B+),
+CHN18CS111   MA101(B+), PH100(B+), BE110(B+), BE10105(B+), BE103(B+), EE100(B+), PH110(A+),
+CHN18CS112   MA101(A), PH100(B+), BE110(B+), BE10105(C), BE103(B), EE100(B), PH110(A), EE110(A+),
+CHN18CS113   MA101(B+), PH100(A), BE110(O), BE10105(B), BE103(B), EE100(A), PH110(A+), EE110(A),
+CHN18CS115   MA101(A+), PH100(A), BE110(O), BE10105(C), BE103(B+), EE100(O), PH110(A), EE110(A),
+CHN18CS116   MA101(B+), PH100(B+), BE110(O), BE10105(C), BE103(B+), EE100(B+), PH110(O), EE110(B+),
+CHN18CS118   MA101(C), PH100(B), BE110(O), BE10105(B+), BE103(B+), EE100(B), PH110(A), EE110(B+),
+CHN18CS120   MA101(C), PH100(C), BE110(B), BE10105(C), BE103(C), EE100(C), PH110(A), EE110(A),
+CHN18CS121   MA101(B), PH100(A), BE110(A), BE10105(B), BE103(B+), EE100(B), PH110(O), EE110(B+),
+CHN18CS122   MA101(B+), PH100(A), BE110(O), BE10105(B), BE103(B+), EE100(B), PH110(O), EE110(A),
+CHN18CS123   MA101(O), PH100(B+), BE110(O), BE10105(A+), BE103(C), EE100(B), PH110(O), EE110(A+),
+$ ls 
+examples.desktop  final.txt  grades.txt  marks1.txt  pass.txt  report.txt  result_CHN.pdf  result.txt  script1.py  work2.txt  work.txt
+$ ls -a
+.   .bash_logout  .cache   examples.desktop  grades.txt  pass.txt  report.txt	   result.txt  work2.txt
+..  .bashrc	  .config  final.txt	     marks1.txt  .profile  result_CHN.pdf  script1.py  work.txt
+$ nano script1.py
+[?1049h[1;45r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[43;68H(B[0;7m[ Reading File ][3d(B[m[43;67H(B[0;7m[ Read 34 lines[37d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                                     File: script1.py                                                                                 [3;1H(B[0;1m[36mimport[39m(B[m pprint,re[4dfname = input()[5dfailed = 0[6dstuddic={}[8d(B[0;1m[36mdef[34m cgpacal[39m(B[m(grades):[9;9Hpoint=0[10;9H(B[0;1m[36mfor[39m(B[m i (B[0;1m[36min[39m(B[m grades:[11;17H(B[0;1m[36mif[39m(B[m((B[0;1m[32m"(O)"[39m(B[m (B[0;1m[36min[39m(B[m i):[12;25Hpoint+=10[13;17H(B[0;1m[36melif[39m(B[m((B[0;1m[32m"(A+)"[39m(B[m (B[0;1m[36min[39m(B[m i):[14;25Hpoint+=9[15;17H(B[0;1m[36melif[39m(B[m((B[0;1m[32m"(A)"[39m(B[m (B[0;1m[36min[39m(B[m i):[16;25Hpoint+=8.5[17;17H(B[0;1m[36melif[39m(B[m((B[0;1m[32m"(B+)"[39m(B[m (B[0;1m[36min[39m(B[m i):[18;25Hpoint+=8[19;17H(B[0;1m[36melif[39m(B[m((B[0;1m[32m"(B)"[39m(B[m (B[0;1m[36min[39m(B[m i):[20;25Hpoint+=7[21;17H(B[0;1m[36melif[39m(B[m((B[0;1m[32m"(C)"[39m(B[m (B[0;1m[36min[39m(B[m i):[22;25Hpoint+=6[23;17H(B[0;1m[36melif[39m(B[m((B[0;1m[32m"(P)"[39m(B[m (B[0;1m[36min[39m(B[m i):[24;25Hpoint+=5[26;9H(B[0;1m[36mreturn[39m(B[m((B[0;1m[32m"{:.2f}"[39m(B[m.format(point/float(len(grades))))[29d(B[0;1m[36mwith[39m(B[m open(fname,(B[0;1m[32m"r+"[39m(B[m) (B[0;1m[36mas[39m(B[m f:[30;9H(B[0;1m[36mfor[39m(B[m i (B[0;1m[36min[39m(B[m f:[31;17H(B[0;1m[36mif[39m(B[m(re.search((B[0;1m[32m"(F)"[39m(B[m, i)):[32;25Hstuddic[i.split()[0]] =-len(re.findall((B[0;1m[32m"(F)"[39m(B[m,i))[33;17H(B[0;1m[36melse[39m(B[m:[34;25Hstuddic[i.split()[0]]=cgpacal(i.split()[1:])[42m [35d(B[0;1m[36mfor[39m(B[m student (B[0;1m[36min[39m(B[m sorted(studdic.keys()):[36;9H(B[0;1m[36mprint[39m(B[m((B[0;1m[32m"{0}\n{1}\n"[39m(B[m.format(student,studdic[student]))[44d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7m^Y(B[m Prev Page    (B[0;7mM-\(B[m First Line  (B[0;7mM-W(B[m WhereIs Next[45d(B[0;7m^X(B[m Exit[45;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7m^V(B[m Next Page    (B[0;7mM-/(B[m Last Line   (B[0;7mM-](B[m To Bracket[3d[43d[J[45;150H[45;1H[?1049l[?1l>$ exit
+Connection to 192.168.0.30 closed.
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ mkdir dir1
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ mkdir dire[K2
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ touch dir1/file[]1].].]1]0][C
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ cs[Kd dir1
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir1[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir1[00m$ las[K[Ks
+file[1..10]
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir1[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir1[00m$ r[Kcd ../
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ cd dir1
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir1[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir1[00m$ gedit te[K[Ksample.ts[Kxtx[K
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir1[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir1[00m$ cd ...[K/
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ rsc[Kync -r dir1/de[Kir2
+rsync: link_stat "/home/s4c2/ceccs18c11/cs232/1702/dir1/dir2" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ rsync -r dir1/dir2 dir2[C[C[C[C
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ cd dir2
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ ls
+sample.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ cat wm[K[Ksample.txt
+Sample text file
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ ls ../
+[0m[01;34m#1[0m  [01;34m#2[0m  [01;34mdir1[0m  [01;34mdir2[0m  work.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ cd ../
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ cd dir2
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ rm sample.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ ls
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ cd ../
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ rsync -a dire[K1/ dir2
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ cd dir2
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ ls
+sample.txt
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ cat samo[Kple.txt
+Sample text file
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702/dir2[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702/dir2[00m$ cd ../
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ ssh cs18c11@192.168..[K0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c11@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+402 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Feb 17 09:32:00 2020 from 192.168.0.77
+$ ls -l
+total 364
+-rw-r--r-- 1 cs18c11 cs18   8980 Apr 20  2016 examples.desktop
+-rw-r--r-- 1 cs18c11 cs18  11971 Feb  7 11:59 final.txt
+-rw-r--r-- 1 cs18c11 cs18   4105 Feb  7 12:08 grades.txt
+-rw-r--r-- 1 cs18c11 cs18   4105 Feb  7 12:00 marks1.txt
+-rw-r--r-- 1 cs18c11 cs18   6921 Feb  7 12:07 pass.txt
+-rw-r--r-- 1 cs18c11 cs18   1314 Feb  7 12:21 report.txt
+-rw-r--r-- 1 cs18c11 cs18  28194 Feb  7 12:08 result_CHN.pdf
+-rw-r--r-- 1 cs18c11 cs18  47213 Feb  7 12:00 result.txt
+-rw-r--r-- 1 cs18c11 cs18    760 Feb  7 12:08 script1.py
+-rw-r--r-- 1 cs18c11 cs18  97688 Feb  7 12:08 work2.txt
+-rw-r--r-- 1 cs18c11 cs18 139264 Feb  7 12:00 work.txt
+$ scp final.txt ce s18c11@19   	  ! @18=  91 2.168.0.30:~/cs ecs cs18c11/cs232/1702
+The authenticity of host '192.168.0.30 (192.168.0.30)' can't be established.
+ECDSA key fingerprint is SHA256:pkLWQEXAwg4Zdh5CXNYydUTPcU7dwDFxyzJnqJ01m/s.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added '192.168.0.30' (ECDSA) to the list of known hosts.
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c11@192.168.0.30's password: 
+scp: /home/cs18c11/ceccs18c11/cs232/1702: No such file or directory
+$ ^[[A^[[A^[[A            sc  pwd
+/home/cs18c11
+$ l scp fina;l  l.txt cs18c11@192.168.0.30: /home/cs18c11
+cp: 'final.txt' and '/home/cs18c11/final.txt' are the same file
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c11@192.168.0.30's password: 
+scp: .: not a regular file
+$ ^[[A\     ^[[A    scp foj  inal.txt             mkdir new
+$ scp fina; l       	  cs18c11@192.168.0.30		: /home/cs18c11/final.txt ` ~/ceccs18x c11/cs232/1702
+/home/cs18c11/ceccs18c11/cs232/1702: No such file or directory
+$ scp cs18c11@192.168.0.30: /home/cs18c11/final.txt ~/ceccs18c11/cs232/1702
+/home/cs18c11/ceccs18c11/cs232/1702: No such file or directory
+$ scp cs18c11@192.168.0.30: /hopme   me/cs18c11/final.txt ~/home/cs18c11/new
+/home/cs18c11/home/cs18c11/new: No such file or directory
+$ scp cs18c11@192.168.0.30: /home/cs18c11/final.txt ~ new
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c11@192.168.0.30's password: 
+scp: .: not a regular file
+$ scp final.txt cs12 8c11@192.168.0.30 :"   : /home/cs18c11/ new^[[D^[[D^[[D                  new
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c11@192.168.0.30's password: 
+scp: .: not a regular file
+cp: omitting directory '/home/cs18c11'
+$ xe  exi it
+Connection to 192.168.0.30 closed.
+]0;s4c2@CC2-26: ~/ceccs18c11/cs232/1702[01;32ms4c2@CC2-26[00m:[01;34m~/ceccs18c11/cs232/1702[00m$ exit
+exit
+
+Script done on Monday 17 February 2020 02:33:55 PM IST
