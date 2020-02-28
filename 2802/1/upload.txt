@@ -1,0 +1,1 @@
+One main advantage of open-source technologies such as Linux is the wide range of options available to users and the increased security. With Linux being open-source, several distributions are available to the end-user. Debian, Fedora, Ubuntu and Mint are just a few of the distributions available to end users, and these distributions are completely free to download.
