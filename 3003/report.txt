@@ -1,0 +1,69 @@
+CEC CS 18C11
+
+Arjun G Krishna
+
+--------------------------------
+#1: Aim/task : (t8) 3. Lamp Stack
+---------------------------------
+Command:
+
+
+#Update package repositiry cache
+
+	sudo apt-get update
+
+#Installing apache	
+
+	sudo apt-get install apache2
+
+#Installing mysql
+
+	sudo apt-get install mysql
+
+#Making sure it(apache) has no problems with firewall
+#Check whether it allows traffic on ports 80 and 443
+
+	sudo ufw app list
+	sudo ufw app info 'Apache Full'
+#Installing mysql
+	
+	sudo apt-get install mysql-server
+
+#Installing php
+	
+	sudo apt-get install php libapache2-mod-php php-mysql
+
+---------------------------------
+
+Input:
+---------------------------------
+
+#php file to display version information
+
+	info.php
+
+#php file hosted on localhost
+
+	index.php
+
+
+----------------------------------
+Output: 
+
+#Screenshot of php info at localhost/info.php
+
+	info.png
+
+#Screenshot of php page hosted at localhost/index.php
+
+	index.png
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
