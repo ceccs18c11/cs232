@@ -8,7 +8,7 @@ Arjun G Krishna
 Command:
 
 
-#Update package repositiry cache
+#Update package repository cache
 
 	sudo apt-get update
 
