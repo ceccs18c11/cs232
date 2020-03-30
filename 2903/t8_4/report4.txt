@@ -1,0 +1,60 @@
+CEC CS 18C11
+
+Arjun G Krishna
+
+--------------------------------
+#1: Aim/task : (t8) 4 Kernel Compilation
+---------------------------------
+Command/Shell script/Program name
+
+#Download the latest kernel 
+    
+    wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.9.tar.xz
+   
+#Untar the downloaded file
+
+    tar -jxvf linux-5.5.9.tar.xz
+
+# Install the required development tools / packages (ignore if already installed)
+    
+    sudo yum groupinstall "Development Tools"
+    sudo yum install ncurses-devel
+    sudo yum install qt-devel
+    sudo yum install unifdef
+    
+# Change the directory to the extracted files
+    
+    cd linux-5.5.9
+    
+# Create the confuguration file (using Xconfig GUI)
+
+    make xconfig
+
+#Compile the Kernel
+
+    make
+
+
+    
+
+---------------------------------
+
+Input:
+
+
+# The downloaded kernel tar file
+
+linux-5.5.11.tar.xz
+
+---------------------------------
+Output: 
+
+# Compiled Kernel at /linux-5.5.9
+Screenshot of compiled kernel attatched : kernel.png
+
+
+-----------------------------------
+Remarks if any:
+-----------------------------------
+
+ 

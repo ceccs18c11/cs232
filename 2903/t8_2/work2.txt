@@ -1,0 +1,17 @@
+Script started on 2020-03-25 14:40:34+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="100" LINES="40"]
+]777;notify;Command completed;exit\]777;precmd\]0;arjun@rosa:~/ceccs18c11/cs232/2503\]7;file://rosa/home/arjun/ceccs18c11/cs232/2503\[arjun@rosa 2503]$ gedit addition.pl
+777;preexec]777;notify;Command completed;gedit addition.pl\]777;precmd\]0;arjun@rosa:~/ceccs18c11/cs232/2503\]7;file://rosa/home/arjun/ceccs18c11/cs232/2503\[arjun@rosa 2503]$ gedit addition.plexit[Kgedit addition.pl[C[C[1P addition.pl[1P addition.pl[1P addition.pl[1P addition.pl[1P addition.ple addition.plr addition.pl[1P addition.pl[1P addition.plp addition.ple addition.plr addition.pll addition.pl
+777;preexecEnter two number 
+4
+5
+
+The result is 9
+]777;notify;Command completed;perl addition.pl\]777;precmd\]0;arjun@rosa:~/ceccs18c11/cs232/2503\]7;file://rosa/home/arjun/ceccs18c11/cs232/2503\[arjun@rosa 2503]$ perl addition.pl[1@gedit[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Kfactorial.pl
+777;preexec]777;notify;Command completed;gedit factorial.pl\]777;precmd\]0;arjun@rosa:~/ceccs18c11/cs232/2503\]7;file://rosa/home/arjun/ceccs18c11/cs232/2503\[arjun@rosa 2503]$ gedit factorial.pl[1P factorial.pl[1P factorial.pl[1P factorial.pl[1P factorial.pl[1P factorial.plp factorial.ple factorial.plr factorial.pll factorial.pl
+777;preexecEnter the number!5
+
+Factorial of 5
+ is 120]777;notify;Command completed;perl factorial.pl\]777;precmd\]0;arjun@rosa:~/ceccs18c11/cs232/2503\]7;file://rosa/home/arjun/ceccs18c11/cs232/2503\[arjun@rosa 2503]$ cle[K[K[Kexit
+777;preexecexit
+
+Script done on 2020-03-25 14:41:33+05:30 [COMMAND_EXIT_CODE="0"]

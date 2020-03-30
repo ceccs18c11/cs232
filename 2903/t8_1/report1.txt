@@ -1,0 +1,40 @@
+CEC CS 18C11
+Arjun G Krishna
+--------------------------------
+#1 Aim/task: (t8 ).1  Package Management
+---------------------------------
+
+Command/Shell script/Program name: 
+
+---------------------------------
+
+Input: (If relevant)
+---------------------------------
+ 
+ >Used DNF package manager to install the package glances
+ 
+ sudo dnf install glances
+ 
+ >Used DNF remove to remove the same package 
+ 
+ sudo dnf remove glances
+  
+  >Other useful package management commands
+  
+  sudo dnf repolist : lists the entire installed repositories in the system
+  sudo dnf repolist all : lists the entire repositories (enabled or disabled) in the system
+  sudo dnf check-update : Checks for full system updates
+  dnf clean packages : Cleans the cached download  package files
+  dnf clean all : Cleans all cached files
+  sudo dnf upgrade :upgrade all system packages
+  sudo dnf groupinstall "package_name" : command syntax for installing group packages
+ 
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+
+-------------------
+Remarks if any: None
+
+

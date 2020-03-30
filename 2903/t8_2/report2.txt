@@ -1,0 +1,37 @@
+CEC CS 18C11
+
+Arjun G Krishna
+
+--------------------------------
+#1  Aim/task: 2. PERL (t8) 2
+---------------------------------
+
+Command/Shell script/Program name
+---------------------------------
+
+# Create a perl file addition.pl
+
+    nano addition.pl
+    
+# Execute the perl file 
+    
+    perl addition.pl
+    
+ # Create a perl file factorial.pl
+ 
+    nano factorial.pl
+    
+#  Execute the perl file
+    
+    perl factorial.pl
+
+
+--------------------------------
+Output: or Input & Output (whichever is applicable):
+
+#Perl programs executed successfully
+
+
+-------------------
+Remarks if any:
+-------------------

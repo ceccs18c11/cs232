@@ -1,0 +1,24 @@
+--------------------------------------------
+Date: 29/03/2020
+--------------------------------------------
+
+#1: Linux installation (t6)
+--------------------------------------------
+Command shell script/program name: Fedora Linux ver. 32
+--------------------------------------------
+Input: Fedora-Workstation-Live-x86_64-31-1.9.iso
+--------------------------------------------
+Processes used:
+
+#Installed Fedora 31 as dual boot along with Windows 10 on my laptop
+
+--------------------------------------------
+Output: 
+
+The various stages of installation has been shown in the attatched images
+installation(1-6)
+
+--------------------------------------------
+Remarks if any:
+-------------------------------------------- 
+--------------------------------------------
