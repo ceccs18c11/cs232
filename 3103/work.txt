@@ -1,0 +1,242 @@
+Script started on 2020-03-31 22:56:20+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="173" LINES="43"]
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudopa[K[K apt-get install vstf[K[Kftpd
+[sudo] password for arjun: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  vsftpd
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/115 kB of archives.
+After this operation, 338 kB of additional disk space will be used.
+Preconfiguring packages ...
+Selecting previously unselected package vsftpd.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 140011 files and directories currently installed.)
+Preparing to unpack .../vsftpd_3.0.3-12_amd64.deb ...
+Unpacking vsftpd (3.0.3-12) ...
+Setting up vsftpd (3.0.3-12) ...
+[vsftpd.conf:1] Line references path below legacy directory /var/run/, updating /var/run/vsftpd/empty → /run/vsftpd/empty; please update the tmpfiles.d/ drop-in file accordingly.
+Processing triggers for man-db (2.8.7-3) ...
+Processing triggers for systemd (242-7ubuntu3) ...
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo systemctl start vsftpd
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo ufw allow 20/tcp
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo ufw allow 20/tcp[1P/tcp1/tcp
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ clear
+[H[2J[3J]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo ufw status
+Status: inactive
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ clear
+[H[2J[3J]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo cp /etc/s[Kvst[Kftpd.conf /ec[Ktc/vsftpd-[K-[K_backuo[K[K[K[K[K[K[K.cong[Kf.orig
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo nano /etc/vsftpd.conf
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;80H(B[0;7m[ Reading... ](B[m[41;78H(B[0;7m[ Read 158 lines ](B[m[H(B[0;7m  GNU nano 4.3                                                                  /etc/vsftpd.conf                                                                             [1;172H(B[m[42d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[42;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous[43d(B[0;7m^X(B[m Exit[43;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[43;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[41d[2d[39;49m[36m# Example config file /etc/vsftpd.conf[3d#[4d# The default compiled in settings are fairly paranoid. This sample file[5d# loosens things up a bit, to make the ftp daemon more usable.[6d# Please see vsftpd.conf.5 for all compiled in defaults.[7d#[8d# READ THIS: This example file is NOT an exhaustive list of vsftpd options.[9d# Please read the vsftpd.conf.5 manual page to get a full idea of vsftpd's[10d# capabilities.[11d#[12d#[13d# Run standalone?  vsftpd can run either from an inetd or as a standalone[14d# daemon started from an initscript.[15d[39m(B[mlisten=NO[16d[36m#[17d# This directive enables listening on IPv6 sockets. By default, listening[18d# on the IPv6 "any" address (::) will accept connections from both IPv6[19d# and IPv4 clients. It is not necessary to listen on *both* IPv4 and IPv6[20d# sockets. If you want that (perhaps because you want to listen on specific[21d# addresses) then you must run two copies of vsftpd with two configuration[22d# files.[23d[39m(B[mlisten_ipv6=YES[24d[36m#[25d# Allow anonymous FTP? (Disabled by default).[26d[39m(B[manonymous_enable=NO[27d[36m#[28d# Uncomment this to allow local users to log in.[29d[39m(B[mlocal_enable=YES[30d[36m#[31d# Uncomment this to enable any form of FTP write command.[32d[39m(B[mwrite_enable=YES[33d[36m#[34d# Default umask for local users is 077. You may wish to change this to 022,[35d# if your users expect that (022 is used by most other ftpd's)[36d[39m(B[mlocal_umask=022[37d[36m#[38d# Uncomment this to allow the anonymous FTP user to upload files. This only[39d# has an effect if the above global write enable is activated. Also, you will[40d# obviously need to create a directory writable by the FTP user.[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[41d[K[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l[36d[?12l[?25h[?25l[37d[?12l[?25h[?25l[38d[?12l[?25h[?25l[39d[?12l[?25h[?25l[40d[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hanon_upload_enable=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Uncomment this if you want the anonymous FTP user to be able to create[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# new directories.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hanon_mkdir_write_enable=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Activate directory messages - messages given to remote users when they[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# go into a certain directory.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hdirmessage_enable=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# If enabled, vsftpd will display directory listings with the time[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# in  your  local  time  zone.  The default is to display GMT. The[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# times returned by the MDTM FTP command are also affected by this[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# option.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Huse_localtime=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Activate logging of uploads/downloads.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hxferlog_enable=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Make sure PORT transfer connections originate from port 20 (ftp-data).[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hconnect_from_port_20=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# If you want, you can arrange for uploaded anonymous files to be owned by[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# a different user. Note! Using "root" for uploaded files is not[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# recommended![39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#chown_uploads=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#chown_username=whoever[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# You may override where the log file goes if you like. The default is shown[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# below.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#xferlog_file=/var/log/vsftpd.log[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# If you want, you can have your log file in standard ftpd xferlog format.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Note that the default log file location is /var/log/xferlog in this case.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hxferlog_std_format=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# You may change the default value for timing out an idle session.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#idle_session_timeout=600[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# You may change the default value for timing out a data connection.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#data_connection_timeout=120[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# It is recommended that you define on your system a unique user which the[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# ftp server can use as a totally isolated and unprivileged user.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#nopriv_user=ftpsecure[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Enable this and the server will recognise asynchronous ABOR requests. Not[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# recommended for security (the code is non-trivial). Not enabling it,[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# however, may confuse older FTP clients.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#async_abor_enable=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# By default the server will pretend to allow ASCII mode but in fact ignore[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# the request. Turn on the below options to have the server actually do ASCII[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# mangling on files when in ASCII mode.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Beware that on some FTP servers, ASCII support allows a denial of service[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# attack (DoS) via the command "SIZE /big/file" in ASCII mode. vsftpd[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# predicted this attack and has always been safe, reporting the size of the[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# raw file.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# ASCII mangling is a horrible feature of the protocol.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#ascii_upload_enable=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#ascii_download_enable=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# You may fully customise the login banner string:[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hftpd_banner= Arjun's ftp :) Welcome![?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# You may specify a file of disallowed anonymous e-mail addresses. Apparently[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# useful for combatting certain DoS attacks.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#deny_email_enable=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# (default follows)[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#banned_email_file=/etc/vsftpd.banned_emails[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# You may restrict local users to their home directories.  See the FAQ for[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# the possible risks in this before using chroot_local_user or[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# chroot_list_enable below.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#chroot_local_user=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# You may specify an explicit list of local users to chroot() to their home[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# directory. If chroot_local_user is YES, then this list becomes a list of[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# users to NOT chroot().[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# (Warning! chroot'ing can be very dangerous. If using chroot, make sure that[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# the user does not have write access to the top level directory within the[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# chroot)[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#chroot_local_user=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#chroot_list_enable=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# (default follows)[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#chroot_list_file=/etc/vsftpd.chroot_list[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# You may activate the "-R" option to the builtin ls. This is disabled by[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# default to avoid remote users being able to cause excessive I/O on large[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# sites. However, some broken FTP clients such as "ncftp" and "mirror" assume[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# the presence of the "-R" option, so there is a strong case for enabling it.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#ls_recurse_enable=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Customization[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Some of vsftpd's settings don't fit the filesystem layout by[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# default.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# This option should be the name of a directory which is empty.  Also, the[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# directory should not be writable by the ftp user. This directory is used[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# as a secure chroot() jail at times vsftpd does not require filesystem[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# access.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hsecure_chroot_dir=/var/run/vsftpd/empty[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# This string is the name of the PAM service vsftpd will use.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hpam_service_name=vsftpd[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# This option specifies the location of the RSA certificate to use for SSL[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# encrypted connections.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hrsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hrsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Hssl_enable=NO[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m# Uncomment this to indicate that vsftpd use a utf8 filesystem.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[36m#utf8_filesystem=YES[39m(B[m[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Huserlist_enable=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1Htcp_wrappers=YES[?12l[?25h[?25l7[2;41r8[41d
+[1;43r[40;1H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;172H[41;80H(B[0;7m[ Writing... ](B[m[1;172H[41;78H(B[0;7m[ Wrote 158 lines ](B[m[A[?12l[?25h[?25l[41d[J[43;173H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo nano /etc/vsftpd.conf
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;80H(B[0;7m[ Reading... ](B[m[41;78H(B[0;7m[ Read 158 lines ](B[m[H(B[0;7m  GNU nano 4.3                                                                  /etc/vsftpd.conf                                                                             [1;172H(B[m[42d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[42;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous[43d(B[0;7m^X(B[m Exit[43;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[43;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[41d[2d[39;49m[36m# Example config file /etc/vsftpd.conf[3d#[4d# The default compiled in settings are fairly paranoid. This sample file[5d# loosens things up a bit, to make the ftp daemon more usable.[6d# Please see vsftpd.conf.5 for all compiled in defaults.[7d#[8d# READ THIS: This example file is NOT an exhaustive list of vsftpd options.[9d# Please read the vsftpd.conf.5 manual page to get a full idea of vsftpd's[10d# capabilities.[11d#[12d#[13d# Run standalone?  vsftpd can run either from an inetd or as a standalone[14d# daemon started from an initscript.[15d[39m(B[mlisten=NO[16d[36m#[17d# This directive enables listening on IPv6 sockets. By default, listening[18d# on the IPv6 "any" address (::) will accept connections from both IPv6[19d# and IPv4 clients. It is not necessary to listen on *both* IPv4 and IPv6[20d# sockets. If you want that (perhaps because you want to listen on specific[21d# addresses) then you must run two copies of vsftpd with two configuration[22d# files.[23d[39m(B[mlisten_ipv6=YES[24d[36m#[25d# Allow anonymous FTP? (Disabled by default).[26d[39m(B[manonymous_enable=NO[27d[36m#[28d# Uncomment this to allow local users to log in.[29d[39m(B[mlocal_enable=YES[30d[36m#[31d# Uncomment this to enable any form of FTP write command.[32d[39m(B[mwrite_enable=YES[33d[36m#[34d# Default umask for local users is 077. You may wish to change this to 022,[35d# if your users expect that (022 is used by most other ftpd's)[36d[39m(B[mlocal_umask=022[37d[36m#[38d# Uncomment this to allow the anonymous FTP user to upload files. This only[39d# has an effect if the above global write enable is activated. Also, you will[40d# obviously need to create a directory writable by the FTP user.[2d[39m(B[m[?12l[?25h[?25l[7d[?12l[?25h[?25l[12d[?12l[?25h[?25l[17d[?12l[?25h[?25l[22d[?12l[?25h[?25l[27d[?12l[?25h[?25l[41d[K[32d[?12l[?25h[?25l[37d[?12l[?25h[?25l[2;41r[41;1H[2S[1;43r[39;1Hanon_upload_enable=YES[40d[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# Uncomment this if you want the anonymous FTP user to be able to create[37d# new directories.[38d[39m(B[manon_mkdir_write_enable=YES[39d[36m#[40d# Activate directory messages - messages given to remote users when they[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# go into a certain directory.[37d[39m(B[mdirmessage_enable=YES[38d[36m#[39d# If enabled, vsftpd will display directory listings with the time[40d# in  your  local  time  zone.  The default is to display GMT. The[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# times returned by the MDTM FTP command are also affected by this[37d# option.[38d[39m(B[muse_localtime=YES[39d[36m#[40d# Activate logging of uploads/downloads.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[3S[1;43r[38;1Hxferlog_enable=YES[39d[36m#[40d# Make sure PORT transfer connections originate from port 20 (ftp-data).[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[2S[1;43r[39;1Hconnect_from_port_20=YES[40d[36m#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# If you want, you can arrange for uploaded anonymous files to be owned by[37d# a different user. Note! Using "root" for uploaded files is not[38d# recommended![39d#chown_uploads=YES[40d#chown_username=whoever[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m#[37d# You may override where the log file goes if you like. The default is shown[38d# below.[39d#xferlog_file=/var/log/vsftpd.log[40d#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# If you want, you can have your log file in standard ftpd xferlog format.[37d# Note that the default log file location is /var/log/xferlog in this case.[38d[39m(B[mxferlog_std_format=YES[39d[36m#[40d# You may change the default value for timing out an idle session.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m#idle_session_timeout=600[37d#[38d# You may change the default value for timing out a data connection.[39d#data_connection_timeout=120[40d#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# It is recommended that you define on your system a unique user which the[37d# ftp server can use as a totally isolated and unprivileged user.[38d#nopriv_user=ftpsecure[39d#[40d# Enable this and the server will recognise asynchronous ABOR requests. Not[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# recommended for security (the code is non-trivial). Not enabling it,[37d# however, may confuse older FTP clients.[38d#async_abor_enable=YES[39d#[40d# By default the server will pretend to allow ASCII mode but in fact ignore[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# the request. Turn on the below options to have the server actually do ASCII[37d# mangling on files when in ASCII mode.[38d# Beware that on some FTP servers, ASCII support allows a denial of service[39d# attack (DoS) via the command "SIZE /big/file" in ASCII mode. vsftpd[40d# predicted this attack and has always been safe, reporting the size of the[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# raw file.[37d# ASCII mangling is a horrible feature of the protocol.[38d#ascii_upload_enable=YES[39d#ascii_download_enable=YES[40d#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# You may fully customise the login banner string:[37d[39m(B[mftpd_banner= Arjun's ftp :) Welcome![38d[36m#[39d# You may specify a file of disallowed anonymous e-mail addresses. Apparently[40d# useful for combatting certain DoS attacks.[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m#deny_email_enable=YES[37d# (default follows)[38d#banned_email_file=/etc/vsftpd.banned_emails[39d#[40d# You may restrict local users to their home directories.  See the FAQ for[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# the possible risks in this before using chroot_local_user or[37d# chroot_list_enable below.[38d#chroot_local_user=YES[39d#[40d# You may specify an explicit list of local users to chroot() to their home[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# directory. If chroot_local_user is YES, then this list becomes a list of[37d# users to NOT chroot().[38d# (Warning! chroot'ing can be very dangerous. If using chroot, make sure that[39d# the user does not have write access to the top level directory within the[40d# chroot)[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m#chroot_local_user=YES[37d#chroot_list_enable=YES[38d# (default follows)[39d#chroot_list_file=/etc/vsftpd.chroot_list[40d#[39m(B[m[?12l[?25h[?25l7[2;41r8[41d[5S[1;43r[36;1H[36m# You may activate the "-R" option to the builtin ls. This is disabled by[37d# default to avoid remote users being able to cause excessive I/O on large[38d# sites. However, some broken FTP clients such as "ncftp" and "mirror" assume[39d# the presence of the "-R" option, so there is a strong case for enabling it.[40d#ls_recurse_enable=YES[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[1;164H(B[0;7mModified(B[m[31dchroot_local_user=YES[K[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l[41d(B[0;7mSave modified buffer?                                                                                                                                                        [42;1H Y(B[m Yes[K[43d(B[0;7m N(B[m No  [43;17H(B[0;7m^C(B[m Cancel[K[41;23H[?12l[?25h[?25l[J[43;173H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo nano /etc/vsftpd.conf[1P /etc/vsftpd.conf[1P /etc/vsftpd.conf[1P /etc/vsftpd.conf[1P /etc/vsftpd.confg /etc/vsftpd.confe /etc/vsftpd.confd /etc/vsftpd.confi /etc/vsftpd.conft /etc/vsftpd.conf
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:04:13.893[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:04:13.894[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:04:41.877[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:04:41.878[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:05:09.307[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:05:09.308[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:05:32.590[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:05:32.590[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (org.gnome.gedit:8044): [1;33mWARNING[0m **: [34m23:05:39.442[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo gedit /etc/vsftpd.conf[1Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp /etc/vsftpd.conf /etc/vsftpd.conf.orig[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Ksudo ufw status[10Pclearsudo ufw allow 21/tcp0/tcpsystemctl start vsftpdapt-get install[C[C[C[C[C[C[Csystemctl start[C[C[C[C[C[C[C
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo systemctl start vsftpd[1@r[1@e
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo useradd -m -c ''f'o's's'l'a'b'[C[K"\fosslab"[1Pfosslab"[1Pfosslab""fosslab"[C[C[C[C[C[C[C[C -s /bin/bash fosslav[Kb
+useradd: user 'fosslab' already exists
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo passwd fosslab
+New password: 
+Retype new password: 
+passwd: password updated successfully
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ echo fosslab"[C[C[C"fosslab"[C[C[C[C[C[C[C[C | sudo tee -a /etc/vsftpd.userlist
+fosslab
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ cat /etc/vsftpd.userlist
+fosslab
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ cale[K[K[Klear
+[H[2J[3J]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ ftp localhi[Kost
+Connected to localhost.
+220 Arjun's ftp :) Welcome!
+Name (localhost:arjun): fosslab
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+226 Directory send OK.
+ftp> mkdir test
+257 "/test" created
+ftp> c[Kcd tesr\[Kt[K[Kt
+250 Directory successfully changed.
+ftp> k[Kmkdir test2
+257 "/test/test2" created
+ftp> ls ../
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    3 1001     1001         4096 Mar 31 23:08 test
+226 Directory send OK.
+ftp> ls -a
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    3 1001     1001         4096 Mar 31 23:08 .
+drwxr-xr-x    3 1001     1001         4096 Mar 31 23:08 ..
+drwxr-xr-x    2 1001     1001         4096 Mar 31 23:08 test2
+226 Directory send OK.
+ftp> ls ../
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    3 1001     1001         4096 Mar 31 23:08 test
+226 Directory send OK.
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    2 1001     1001         4096 Mar 31 23:08 test2
+226 Directory send OK.
+ftp> exiy[Kt
+221 Goodbye.
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ clear
+[H[2J[3J]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo apt-get install apachr[Ke2
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+apache2 is already the newest version (2.4.41-1ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ clear
+[H[2J[3J]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ sudo naon [K[K[Kno [K /var [K/htm[K[K[Kwww/html/nd[K[Kn[Kindex.htmkl[K[Kl
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;80H(B[0;7m[ Reading... ](B[m[41;79H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 4.3                                                              /var/www/html/index.html                                                                         [1;172H(B[m[42d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[42;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous[43d(B[0;7m^X(B[m Exit[43;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[43;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[41d[2d[39;49m[36m<!DOCTYPE html>[3d<html [31mlang=[32m"en"[36m [31mdir=[32m"ltr"[36m>[4;3H<head>[5;5H<meta [31mcharset=[32m"utf-8"[36m>[6;5H<title>[39m(B[mCS18C11 Arjun[36m</title>[7;3H</head>[8;3H<body><t1>(B[0;1m[35m<b>[39m(B[mWelcome to my webpage!(B[0;1m[35m</b>(B[0m[36m</t1><br>[9;7H<p>[10d<t2>[39m(B[mHello I am Arjun, a Computer Science and Engineering student from[36m<br>[11;7H[39m(B[mCollege of Engineering Chengannur[36m</t2>[12;5H</p>[13;5H<br><br>[14;5H<t2>[39m(B[mContact Me: +91-9567125267 [36m</t2>[39m(B[m [36m<br><a [31mhref=[32m"http://www.instagram.com/arjunradhakrishnan_"[36m>[39m(B[mInstagram    [36m</a>[39m(B[m [36m<a [31mhref=[32m"https://www.facebook.com/Arjun-Radhakrishnan-[39m(B[0;7m>[15;3H(B[0m[36m</body>[16d</html>[2d[39m(B[m[?12l[?25h[?25l[1;172H[41;79H (B[0;7m[ Writing... ](B[m[K[1;172H[41;78H(B[0;7m[ Wrote 15 lines ](B[m[2d[?12l[?25h[?25l[41d[J[43;173H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/cs18c11/3103[01;32marjun@vivobook[00m:[01;34m~/cs18c11/3103[00m$ exit
+exit
+
+Script done on 2020-03-31 23:12:54+05:30 [COMMAND_EXIT_CODE="0"]
