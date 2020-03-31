@@ -1,0 +1,78 @@
+CEC CS 18C11
+
+Arjun G Krishna
+
+Date:1/04/2020
+
+--------------------------------
+
+#1: Aim/task: (t7) Setting up http and ftp servers
+
+---------------------------------
+
+Command:
+
+#1.WEB PAGE
+#Install apache2
+
+	sudo apt-get install apache2
+
+#Editing the index.html file hosted at localhost
+
+	sudo nano /var/www/html/index.html
+
+#2.SETTING UP FTP SERVER
+#Installing vsftpd
+
+	sudo apt-get install vsftpd
+
+#start the service
+
+	sudo systemctl start vsftpd
+
+#Opening ports 21 and 20 (if enabled)
+#to access from remote machnines.
+
+	sudo ufw allow 20/tcp
+	sudo ufw allow 20/tcp
+	sudo ufw status
+
+#Backing up the vsftpd configuration file before tweaking it 
+
+	sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig
+
+#Tweaking the vsftpd.conf file 
+
+	sudo nano /etc/vsftpd.conf
+
+#Save the conf file and restart vsftpd 
+
+	systemctl vsftpd restart
+
+#Adding a new user and setting up password
+
+	sudo useradd-m -c 'Comment' -s username
+	sudo passwd username
+
+#logging into ftp server
+
+	ftp localhost
+
+------------------------------------
+
+------------------------------------
+Output:
+
+#Screenshot of the webpage hosted at localhost
+
+	preview.png
+
+#Successfully set up ftp servers
+
+
+------------------------------------
+Remarks:
+
+-------------------------------------
+-------------------------------------
+
