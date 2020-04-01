@@ -1,1 +1,1 @@
-# cs232
+# CS232 FOSS LAB
