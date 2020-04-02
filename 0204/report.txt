@@ -1,0 +1,29 @@
+CEC CS 18C11
+
+Arjun G Krishna
+
+--------------------------------
+#1: Aim/task :(t9) Setting up own webpage at server
+---------------------------------
+
+Program name: index.html
+
+---------------------------------
+Output:
+
+#The webpage can be accessed from
+#Internet at
+
+  https://14.139.189.217/cs18c/cs18c11/index.html
+
+#intranet at
+
+  https://192.168.0.30/cs18c/cs18c11/index.html
+
+
+
+-------------------
+Remarks if any:
+
+-------------------------------------
+-------------------------------------
