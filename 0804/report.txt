@@ -1,0 +1,99 @@
+CEC CS18C11
+
+Arjun G Krishna
+
+Public IP : 106.200.73.247
+
+Date: 08-04-2020
+
+--------------------------------
+#1: Aim/task
+
+
+  S4 Shell script to show various system configuration like
+
+  Currently logged user and their login name
+  Your current shell
+  Your home directory
+  Your operating system type
+  Your current path setting
+  Your current working directory
+  Number of users currently logged in
+
+
+---------------------------------
+Command/Shell script/Program name
+
+#Shell script:
+
+  info.sh
+
+#Modify permission
+
+  chmod +x info.sh
+
+#Run the script
+
+  ./info.sh
+
+
+
+---------------------------------
+
+--------------------------------
+Output:
+
+#The work script is
+
+  work.txt
+
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+
+#2: Aim/task
+
+
+    S5 Shell script to show
+
+    OS and Version, release number and Kernel Version
+    All available shells
+    CPU information like processor type and speed
+    Memory information
+    Hard Disk information like size of Hard disk, cache, model etc
+    Mounted filesystems
+
+---------------------------------
+
+Command/Shell script/Program name
+
+#Shell script:
+
+  info1.sh
+
+
+#Modify permission
+
+  chmod +x info1.sh
+
+#Run script
+
+  ./info1.sh
+
+--------------------------------
+Output:
+
+#The work script is
+
+  work.txt
+
+
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------

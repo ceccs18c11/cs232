@@ -1,0 +1,59 @@
+CEC CS18C11
+
+Arjun G Krishna
+
+Public IP : 27.62.21.176
+
+Date: 09-04-2020
+
+--------------------------------
+#1: Aim/task
+
+s7 Write a script called addnames that is to be called as follows
+
+./addnames ulist username
+Here ulist is the name of the file that contains
+list of user names and username is a
+particular student's username. The script should
+check that the correct number of arguments was
+received and print a message, in case the
+number of arguments is incorrect check whether the
+ulist file exists and print an error message if it does not
+check whether the username already exists in the file.
+If the username exists, print a message stating that
+the name already exists. Otherwise, add the username to the end of the list.
+
+---------------------------------
+Command/Shell script/Program name
+
+#Shell script:
+
+  addnames.sh
+
+#Modify permission
+
+  chmod +x addnames.sh
+
+#Run the script
+
+  ./addnames.sh username ulist.txt
+
+
+
+---------------------------------
+
+--------------------------------
+Output:
+
+  image.jpg
+
+#The work script is
+
+  work.txt
+
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------

@@ -1,0 +1,44 @@
+CEC CS 18C11
+Arjun G Krishna
+
+Public IP:106.200.73.247
+Date : 08-04-20
+--------------------------------
+#1: Aim/task :
+
+s16 GUI Programming
+
+Create a scientifuc calculator using any
+one of Gambas, GTK, QT
+
+---------------------------------
+Command
+
+#Installing gambas3
+
+  sudo add-apt-repository ppa:gambas-team/gambas-daily
+  sudo apt-get install gambas3
+
+---------------------------------
+Output:
+
+#The work script is
+
+work2.txt 
+
+#The scientific calculator executable
+
+Calculator.gambas
+
+#The output of the executed program is shown in screenshots
+
+image1.jpg
+image2.jpg
+image3.jpg
+
+-------------------
+Remarks if any:
+
+----------------------------------
+
+----------------------------------
