@@ -1,0 +1,44 @@
+Script started on 2020-04-21 04:07:15-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]777;notify;Command completed;gedit report.txt\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ curl ifconfig.me
+777;preexec27.62.12.193]777;notify;Command completed;curl ifconfig.me\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ cla[Kear
+777;preexec[H[2J[3J]777;notify;Command completed;clear\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ gedit killproc.sh
+777;preexec]777;notify;Command completed;gedit killproc.sh\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ cm=[Kh[K[Khmod =x[K[K+x killproc.sh
+777;preexec]777;notify;Command completed;chmod +x killproc.sh\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ ./killproc.sh
+777;preexecKilling processes with greater than 50% CPU usage
+ 
+Enter any key to continue...
+rm: cannot remove 'process.txt': No such file or directory
+rm: cannot remove 'kill.txt': No such file or directory
+]777;notify;Command completed;./killproc.sh\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ ./killproc.sh
+777;preexecKilling processes with greater than 50% CPU usage
+ 
+Enter any key to continue...
+]777;notify;Command completed;./killproc.sh\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ ./killproc.shchmod +x killproc.sh[3Pgedit[C[C[C[C[C[C[C[C[C[C[C[C
+777;preexec]777;notify;Command completed;gedit killproc.sh\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ sudo gdeo[K[Ked[K[K[Kde[K[Kedit /etc/rc.d/rc.local
+777;preexec
+(org.gnome.gedit:10908): dconf-[1;33mWARNING[0m **: [34m04:18:39.940[0m: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(org.gnome.gedit:10908): dconf-[1;33mWARNING[0m **: [34m04:18:39.946[0m: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(org.gnome.gedit:10908): dconf-[1;33mWARNING[0m **: [34m04:18:40.078[0m: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(org.gnome.gedit:10908): dconf-[1;33mWARNING[0m **: [34m04:18:40.078[0m: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+(org.gnome.gedit:10908): dconf-[1;33mWARNING[0m **: [34m04:18:40.079[0m: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+
+** (org.gnome.gedit:10908): [1;33mWARNING[0m **: [34m04:18:47.587[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (org.gnome.gedit:10908): [1;33mWARNING[0m **: [34m04:18:47.587[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (org.gnome.gedit:10908): [1;33mWARNING[0m **: [34m04:18:50.340[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+
+(org.gnome.gedit:10908): dconf-[1;33mWARNING[0m **: [34m04:18:50.348[0m: failed to commit changes to dconf: Failed to execute child process “dbus-launch” (No such file or directory)
+]777;notify;Command completed;sudo gedit /etc/rc.d/rc.local\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ chod[K[Kmod =[K+xsudo gedit /etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.local[1P/etc/rc.d/rc.locals/etc/rc.d/rc.localu/etc/rc.d/rc.locald/etc/rc.d/rc.localo/etc/rc.d/rc.local /etc/rc.d/rc.localc/etc/rc.d/rc.localh/etc/rc.d/rc.localm/etc/rc.d/rc.localo/etc/rc.d/rc.locald/etc/rc.d/rc.local /etc/rc.d/rc.local+/etc/rc.d/rc.localx/etc/rc.d/rc.local /etc/rc.d/rc.local
+777;preexec]777;notify;Command completed;sudo chmod +x /etc/rc.d/rc.local\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ exir[K[K[K[K../[K[K[K./l[Kkillproc.sh
+777;preexecKilling processes with greater than 50% CPU usage
+ 
+Enter any key to continue...
+]777;notify;Command completed;./killproc.sh\]777;precmd\]0;liveuser@localhost-live:~/ceccs18c11/cs232/2104\]7;file://localhost-live/home/liveuser/ceccs18c11/cs232/2104\[liveuser@localhost-live 2104]$ exit
+777;preexecexit
+
+Script done on 2020-04-21 04:19:36-04:00 [COMMAND_EXIT_CODE="0"]

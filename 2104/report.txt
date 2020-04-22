@@ -1,0 +1,54 @@
+CEC CS 18 C11
+
+Date:21-04-2020 
+Public IP: 27.62.12.193
+
+Arjun G Krishna
+
+--------------------------------
+#1: Aim/task :(S9)
+
+Shell script that executes on startup and kills
+every process that uses more than a particular amount
+of memory
+
+---------------------------------
+Shell Script: killproc.sh
+
+#Making the script executable
+
+	chmod +x killproc.sh
+
+#Executing script used to Kill the processes
+	
+	./killproc.sh
+
+#Making the script run on startup
+
+	sudo gedit /etc/rc.d/rc.local
+
+#Add the path to the shell script to be 
+#executed on startup, 
+#for example /home/liveuser/ceccs18c11/cs232/2104/killer.sh
+				
+#Also grant permission to be executable
+	
+	sudo chmod +x /etc/rc.d/rc.local	
+
+---------------------------------
+
+Input: (If relevant)
+--------------------------------
+
+--------------------------------
+Output:
+
+#The work script is work.txt
+
+-------------------
+Remarks if any:
+
+-------------------------------------
+-------------------------------------
+
+

@@ -1,0 +1,194 @@
+    PID USER     %MEM COMMAND
+   9728 liveuser  7.8 /usr/bin/gnome-shell
+  10194 liveuser  3.6 /usr/bin/nautilus --gapplication-service
+  10894 liveuser  2.8 /usr/bin/gedit --gapplication-service
+   9757 liveuser  2.4 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.ZNUGJ0 -listen 4 -listen 5 -displayfd 6
+  10677 liveuser  2.3 /usr/libexec/gnome-terminal-server
+   9960 liveuser  2.3 /usr/libexec/evolution-data-server/evolution-alarm-notify
+   1038 root      1.6 /usr/bin/python3 /usr/sbin/firewalld --nofork --nopid
+   1591 root      1.4 /usr/libexec/sssd/sssd_kcm --uid 0 --gid 0 --logger=files
+   9867 liveuser  1.4 /usr/libexec/ibus-x11 --kill-daemon
+   9992 liveuser  1.2 /usr/libexec/tracker-miner-fs
+   9922 liveuser  1.2 /usr/libexec/gsd-power
+   9917 liveuser  1.2 /usr/libexec/gsd-media-keys
+   9908 liveuser  1.2 /usr/libexec/gsd-color
+   1118 polkitd   1.1 /usr/lib/polkit-1/polkitd --no-debug
+   9964 liveuser  1.1 /usr/libexec/gsd-xsettings
+   9955 liveuser  1.1 /usr/libexec/gsd-wacom
+   9916 liveuser  1.1 /usr/libexec/gsd-keyboard
+   9809 liveuser  1.1 /usr/libexec/goa-daemon
+   9876 liveuser  1.1 /usr/libexec/evolution-calendar-factory
+    837 root      1.0 /usr/lib/systemd/systemd-journald
+   9803 liveuser  1.0 /usr/libexec/evolution-source-registry
+   9897 liveuser  0.9 /usr/libexec/evolution-addressbook-factory
+   9799 liveuser  0.8 /usr/libexec/gnome-shell-calendar-server
+   9706 liveuser  0.8 /usr/libexec/gnome-session-binary --systemd-service --session=gnome
+   9970 liveuser  0.8 /usr/bin/abrt-applet --gapplication-service
+   1173 root      0.7 /usr/sbin/NetworkManager --no-daemon
+  10036 liveuser  0.7 /usr/libexec/gsd-printer
+   9912 liveuser  0.7 /usr/libexec/gsd-datetime
+      1 root      0.6 /usr/lib/systemd/systemd --switched-root --system --deserialize 29
+   9947 liveuser  0.6 /usr/libexec/gsd-smartcard
+   9944 liveuser  0.6 /usr/libexec/gsd-sharing
+   9923 liveuser  0.6 /usr/libexec/gsd-print-notifications
+   9627 liveuser  0.6 /usr/libexec/gnome-session-binary
+   9311 liveuser  0.6 /usr/bin/pulseaudio --daemonize=no
+    851 root      0.5 /usr/lib/systemd/systemd-udevd
+   1051 root      0.5 /usr/libexec/udisks2/udisksd
+   9821 liveuser  0.5 /usr/libexec/gvfs-udisks2-volume-monitor
+  10197 liveuser  0.5 /usr/libexec/gvfsd-trash --spawner :1.5 /org/gtk/gvfs/exec_spaw/0
+   9959 liveuser  0.5 /usr/libexec/gsd-wwan
+   9949 liveuser  0.5 /usr/libexec/gsd-sound
+   1956 colord    0.5 /usr/libexec/colord
+   9857 liveuser  0.5 ibus-daemon --panel disable -r --xim
+   9603 root      0.5 gdm-session-worker [pam/gdm-password]
+   1248 root      0.4 /usr/sbin/gdm
+   1981 root      0.4 /usr/sbin/abrt-dbus -t133
+   1304 liveuser  0.4 /usr/lib/systemd/systemd --user
+   1132 root      0.4 /usr/lib/systemd/systemd-logind
+   1102 root      0.4 /usr/libexec/sssd/sssd_be --domain implicit_files --uid 0 --gid 0 --logger=files
+   9871 liveuser  0.4 /usr/libexec/ibus-portal
+  10033 liveuser  0.4 /usr/libexec/ibus-engine-simple
+   9865 liveuser  0.4 /usr/libexec/ibus-dconf
+   9660 liveuser  0.4 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   9848 liveuser  0.4 /usr/libexec/gvfs-afc-volume-monitor
+   9913 liveuser  0.4 /usr/libexec/gsd-housekeeping
+   9906 liveuser  0.4 /usr/libexec/gsd-a11y-settings
+   9773 liveuser  0.4 /usr/libexec/at-spi-bus-launcher
+   1046 root      0.3 /usr/sbin/sssd -i --logger=files
+   1034 root      0.3 /usr/sbin/ModemManager
+   1782 root      0.3 /usr/sbin/cupsd -l
+   1525 root      0.3 /usr/libexec/upowerd
+   1108 root      0.3 /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --logger=files
+   9844 liveuser  0.3 /usr/libexec/gvfs-mtp-volume-monitor
+   9853 liveuser  0.3 /usr/libexec/gvfs-gphoto2-volume-monitor
+   9839 liveuser  0.3 /usr/libexec/gvfs-goa-volume-monitor
+  10648 liveuser  0.3 /usr/libexec/gvfsd-metadata
+   9654 liveuser  0.3 /usr/libexec/gvfsd
+   9937 liveuser  0.3 /usr/libexec/gsd-screensaver-proxy
+   9928 liveuser  0.3 /usr/libexec/gsd-rfkill
+   9919 liveuser  0.3 /usr/libexec/gsd-disk-utility-notify
+   9833 liveuser  0.3 /usr/libexec/goa-identity-service
+   9624 liveuser  0.3 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
+   9892 liveuser  0.3 /usr/libexec/dconf-service
+   9900 liveuser  0.3 /usr/libexec/at-spi2-registryd --use-gnome-session
+   1110 root      0.3 /usr/libexec/accounts-daemon
+   1096 dbus      0.3 dbus-broker --log 4 --controller 9 --machine-id be6c18fdc2d9422b81a69ca77546759c --max-bytes 536870912 --max-fds 4096 --max-matches 131072 --audit
+  10725 liveuser  0.3 bash -i
+   9795 liveuser  0.2 /usr/libexec/xdg-permission-store
+   9704 liveuser  0.2 /usr/libexec/gnome-session-ctl --monitor
+   9614 liveuser  0.2 /usr/bin/gnome-keyring-daemon --daemonize --login
+   1064 dbus      0.2 /usr/bin/dbus-broker-launch --scope system --audit
+   1319 liveuser  0.2 (sd-pam)
+   1044 root      0.2 /sbin/rngd -f
+   9376 liveuser  0.2 dbus-broker --log 4 --controller 11 --machine-id be6c18fdc2d9422b81a69ca77546759c --max-bytes 100000000000000 --max-fds 25000000000000 --max-matches 5000000000
+  10682 liveuser  0.2 bash
+   1563 root      0.1 /usr/sbin/wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -u -s
+   1085 root      0.1 /usr/sbin/gssproxy -D
+   1259 chrony    0.1 /usr/sbin/chronyd
+   1060 root      0.1 /usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main rdaemon
+   1048 root      0.1 /usr/lib/systemd/systemd-machined
+   1045 rtkit     0.1 /usr/libexec/rtkit-daemon
+   9375 liveuser  0.1 /usr/bin/dbus-broker-launch --scope user
+   9778 liveuser  0.1 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+  10723 liveuser  0.1 script work.txt
+    979 root      0.1 /sbin/auditd
+  10939 liveuser  0.1 ps -o pid,user,%mem,command ax
+   9779 liveuser  0.1 dbus-broker --log 4 --controller 9 --machine-id be6c18fdc2d9422b81a69ca77546759c --max-bytes 100000000000000 --max-fds 6400000 --max-matches 5000000000
+  10936 liveuser  0.1 /bin/bash ./killproc.sh
+   1035 avahi     0.1 avahi-daemon: running [linux.local]
+    403 root      0.0 [xprtiod]
+   1037 root      0.0 [xcopy_wq]
+     25 root      0.0 [writeback]
+    139 root      0.0 [watchdogd]
+   1043 root      0.0 /usr/sbin/mcelog --ignorenodev --daemon --foreground
+    534 root      0.0 [usb-storage]
+    134 root      0.0 [tpm_dev_wq]
+   1036 root      0.0 [target_completi]
+   1025 root      0.0 [srp_remove]
+  10940 liveuser  0.0 sort -b -k3 -r
+    533 root      0.0 [scsi_tmf_4]
+    156 root      0.0 [scsi_tmf_3]
+    154 root      0.0 [scsi_tmf_2]
+    151 root      0.0 [scsi_tmf_1]
+    149 root      0.0 [scsi_tmf_0]
+    532 root      0.0 [scsi_eh_4]
+    155 root      0.0 [scsi_eh_3]
+    153 root      0.0 [scsi_eh_2]
+    150 root      0.0 [scsi_eh_1]
+    148 root      0.0 [scsi_eh_0]
+    402 root      0.0 [rpciod]
+    971 root      0.0 [Register_iWARP_]
+    968 root      0.0 [rdma_cm]
+     21 root      0.0 [rcu_tasks_kthre]
+     10 root      0.0 [rcu_sched]
+      4 root      0.0 [rcu_par_gp]
+      3 root      0.0 [rcu_gp]
+     24 root      0.0 [oom_reaper]
+     20 root      0.0 [netns]
+      8 root      0.0 [mm_percpu_wq]
+     15 root      0.0 [migration/1]
+     11 root      0.0 [migration/0]
+    136 root      0.0 [md]
+    675 root      0.0 [loop2]
+    669 root      0.0 [loop1]
+    665 root      0.0 [loop0]
+    143 root      0.0 [kworker/u5:0]
+   9863 root      0.0 [kworker/u4:5-flush-253:0]
+  10810 root      0.0 [kworker/u4:2-flush-253:0]
+  10903 root      0.0 [kworker/u4:1-events_unbound]
+   8257 root      0.0 [kworker/u4:0-events_unbound]
+   9205 root      0.0 [kworker/1:3-events]
+  10933 root      0.0 [kworker/1:2]
+    558 root      0.0 [kworker/1:1H-events_highpri]
+  10813 root      0.0 [kworker/1:1-ata_sff]
+     18 root      0.0 [kworker/1:0H]
+  10904 root      0.0 [kworker/1:0-ata_sff]
+   9024 root      0.0 [kworker/0:2-events_power_efficient]
+    188 root      0.0 [kworker/0:1H-events_highpri]
+  10815 root      0.0 [kworker/0:1-events_power_efficient]
+      6 root      0.0 [kworker/0:0H-kblockd]
+  10802 root      0.0 [kworker/0:0-events_power_efficient]
+    146 root      0.0 [kthrotld]
+      2 root      0.0 [kthreadd]
+    142 root      0.0 [kswapd0]
+    167 root      0.0 [kstrp]
+     16 root      0.0 [ksoftirqd/1]
+      9 root      0.0 [ksoftirqd/0]
+    679 root      0.0 [ksnaphd]
+     27 root      0.0 [ksmd]
+    563 root      0.0 [kmpath_handlerd]
+    562 root      0.0 [kmpathd]
+    131 root      0.0 [kintegrityd]
+     28 root      0.0 [khugepaged]
+    686 root      0.0 [kdmflush]
+    678 root      0.0 [kdmflush]
+     19 root      0.0 [kdevtmpfs]
+    680 root      0.0 [kcopyd]
+     26 root      0.0 [kcompactd0]
+    132 root      0.0 [kblockd]
+     22 root      0.0 [kauditd]
+    704 root      0.0 [jbd2/dm-0-8]
+    970 root      0.0 [iw_cxgb4]
+    961 root      0.0 [iw_cxgb3]
+    372 root      0.0 [iscsi_eh]
+    876 root      0.0 [irq/29-mei_me]
+    160 root      0.0 [ipv6_addrconf]
+    959 root      0.0 [ib_nl_sa_wq]
+    958 root      0.0 [ib_mcast]
+    956 root      0.0 [ib-comp-wq]
+    957 root      0.0 [ib-comp-unb-wq]
+    705 root      0.0 [ext4-rsv-conver]
+    137 root      0.0 [edac-poller]
+    159 root      0.0 [dm_bufio_cache]
+    138 root      0.0 [devfreq_wq]
+     50 root      0.0 [cryptd]
+     14 root      0.0 [cpuhp/1]
+     13 root      0.0 [cpuhp/0]
+    374 root      0.0 [cnic_wq]
+    376 root      0.0 [bnx2i_thread/1]
+    375 root      0.0 [bnx2i_thread/0]
+    133 root      0.0 [blkcg_punt_bio]
+   1099 avahi     0.0 avahi-daemon: chroot helper
+    135 root      0.0 [ata_sff]
+    147 root      0.0 [acpi_thermal_pm]
