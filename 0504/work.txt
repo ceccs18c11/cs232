@@ -1,0 +1,450 @@
+Script started on 2020-04-05 16:36:07+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ clear
+[H[2J[3J]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.3                        foss.sh                                   [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2d[36m#[39m(B[m[?12l[?25h[?25l[36mO[39m(B[m[?12l[?25h[?25l[36mp[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l[36mq[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36mg[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m s[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36my[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mm[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m d[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l[36ma[22d[39m(B[m[K[2;23H[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[36m a[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36md[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m s[39m(B[m[?12l[?25h[?25l[36mo[39m(B[m[?12l[?25h[?25l[36mf[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l[36mw[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m h[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l[36md[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[36m,software[39m[42m [2;19H[49m(B[m[?12l[?25h[?25l[36m software[39m[42m [2;20H[49m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[42m [49m(B[m[?12l[?25h[?25l[36m a[39m[42m [49m(B[m[?12l[?25h[?25l[36mn[39m[42m [49m(B[m[?12l[?25h[?25l[36md[39m[42m [49m(B[m[?12l[?25h[?25l[C[42m [49m(B[m[?12l[?25h[?25l[36m h[39m[42m [49m(B[m[?12l[?25h[?25l[36ma[39m[42m [49m(B[m[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[36md[39m[42m [49m(B[m[?12l[?25h[?25l[36mw[39m[42m [49m(B[m[?12l[?25h[?25l[36ma[39m[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[36me[39m[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[36ma[39m[42m [49m(B[m[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[36me[39m[42m [49m(B[m[?12l[?25h[?25l[C[42m [49m(B[m[?12l[?25h[?25l[36m d[39m[42m [49m(B[m[?12l[?25h[?25l[36me[39m[42m [49m(B[m[?12l[?25h[?25l[36mt[39m[42m [49m(B[m[?12l[?25h[?25l[36ma[39m[42m [49m(B[m[?12l[?25h[?25l[36mi[39m[42m [49m(B[m[?12l[?25h[?25l[36ml[39m[42m [49m(B[m[?12l[?25h[?25l[36ms[39m[42m [49m(B[m[?12l[?25h[?25l [3d[42m [49m(B[m[?12l[?25h[?25l[K[4d[42m [49m(B[m[?12l[?25h[?25ln[42m [49m(B[m[?12l[?25h[?25lo[42m [49m(B[m[?12l[?25h[?25le[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25le[42m [49m(B[m[?12l[?25h[?25lo[42m [49m(B[m[?12l[?25h[?25lf[42m [49m(B[m[?12l[?25h[?25le[42m [49m(B[m[?12l[?25h[?25lt[42m [49m(B[m[?12l[?25h[?25lc[42m [49m(B[m[?12l[?25h[?25lh[42m [49m(B[m[?12l[?25h[?25l [5d[42m [49m(B[m[?12l[?25h[?25l[K[6d[42m [49m(B[m[?12l[?25h[?25l[36m#[39m[42m [49m(B[m[?12l[?25h[?25l[36mc[39m[42m [49m(B[m[?12l[?25h[?25l[36mu[39m[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[36mW[39m[42m [49m(B[m[?12l[?25h[?25l[36mo[39m[42m [49m(B[m[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[36mk[39m[42m [49m(B[m[?12l[?25h[?25l[36mi[39m[42m [49m(B[m[?12l[?25h[?25l[36mn[39m[42m [49m(B[m[?12l[?25h[?25l[36mg[39m[42m [49m(B[m[?12l[?25h[?25l[C[42m [49m(B[m[?12l[?25h[?25l[36m d[39m[42m [49m(B[m[?12l[?25h[?25l[36mi[39m[42m [49m(B[m[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[36me[39m[42m [49m(B[m[?12l[?25h[?25l[36mc[39m[42m [49m(B[m[?12l[?25h[?25l[36mt[39m[42m [49m(B[m[?12l[?25h[?25l[36mo[39m[42m [49m(B[m[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[36my[39m[42m [49m(B[m[?12l[?25h[?25l [7d[42m [49m(B[m[?12l[?25h[?25l[K[8d[42m [49m(B[m[?12l[?25h[?25le[42m [49m(B[m[?12l[?25h[?25lc[42m [49m(B[m[?12l[?25h[?25lh[42m [49m(B[m[?12l[?25h[?25lp[42m [49m(B[m[?12l[?25h[?25l[32m=[39m[42m [49m(B[m[?12l[?25h[?25lo[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[34mecho(B[0m[42m [49m(B[m[?12l[?25h[?25l"[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m""(B[0m[42m [49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l (B[0;1m[33m""(B[0m[42m [49m(B[m[?12l[?25h[?25l[C[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;46r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 4.3                        foss.sh                         Modified  [2d(B[0m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""(B[0m[42m [23d[49m(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[8;7H[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 4.3                        foss.sh                         Modified  [2d(B[0m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""(B[0m[42m [23d[49m(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[45d[1;39H(B[0;7m       [1;71H                 foss.sh                                                                          Modified  [1;177H(B[m[23d[K[24d[K[45d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[45;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous[46d(B[0;7m^X(B[m Exit[46;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[46;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[44d[?25l[8;7H[?12l[?25h[?25l[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;43r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 4.3                                                                         foss.sh                                                                          Modif[2;1H(B[0m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""(B[0m[42m [49m(B[m[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 4.3                                                                         foss.sh                                                                          Modif[2;1H(B[0m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""(B[0m[42m [42d[49m(B[m[1;86H(B[0;7mfoss.sh  [1;164HModified  [1;172H(B[m[42d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[42;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous[43d(B[0;7m^X(B[m Exit[43;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[43;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[41d[?25l[8;7H[?12l[?25h[?25l[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;41r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 4.3                                                                   [2;1H(B[0m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""(B[0m[42m [49m(B[m[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 4.3                                                                   [2;1H(B[0m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""(B[0m[42m [40d[49m(B[m[1;40H(B[0;7mfoss.sh[1;72HModified(B[m[40d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[41d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[39d[?25l[8;7H[?12l[?25h[?25l[?12l[?25h[41;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;43r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 4.3                         foss.sh                         Modified  [2d(B[0m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""(B[0m[42m [40d[49m(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[41d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[8;7H[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 4.3                         foss.sh                         Modified  [2d(B[0m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m""(B[0m[42m [40d[49m(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[42d[1;40H(B[0;7m  foss.sh[1;72H     Modified  [1;85H(B[m[40d[K[42d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[43d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[41d[?25l[8;7H[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mP"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mw"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33mr"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33me"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33ms"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33me"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mn"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mt"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m "(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mw"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mo"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mr"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mk"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mi"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mn"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mf"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m "(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33md"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m "(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33mg"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m "(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mi"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33md"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mi"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mr"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33me"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mc"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mt"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mo"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mr"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33my"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m\"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mn"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33m "(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33m:"(B[0m[42m [49m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[42m [49m(B[m[?12l[?25h[?25l p[42m [49m(B[m[?12l[?25h[?25lw[42m [49m(B[m[?12l[?25h[?25ld[42m [49m(B[m[?12l[?25h[?25l [9d[42m [49m(B[m[?12l[?25h[?25l[K[10d[42m [49m(B[m[?12l[?25h[?25l[36m#[39m[42m [49m(B[m[?12l[?25h[?25l[36mH[39m[42m [49m(B[m[?12l[?25h[?25l[36mo[39m[42m [49m(B[m[?12l[?25h[?25l[36mw[39m[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[36mm[39m[42m [49m(B[m[?12l[?25h[?25l[36me[39m[42m [49m(B[m[?12l[?25h[?25l[C[42m [49m(B[m[?12l[?25h[?25l[36m d[39m[42m [49m(B[m[?12l[?25h[?25l[36mi[39m[42m [49m(B[m[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[36mrr[39m[42m [49m(B[m[?12l[?25h[?25l[36me[39m[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[36me[39m[42m [49m(B[m[?12l[?25h[?25l[36mc[39m[42m [49m(B[m[?12l[?25h[?25l[36mt[39m[42m [49m(B[m[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[36mo[39m[42m [49m(B[m[?12l[?25h[?25l[36mr[39m[42m [49m(B[m[?12l[?25h[?25l[36my[39m[42m [49m(B[m[?12l[?25h[?25l [11d[42m [49m(B[m[?12l[?25h[?25l[K[12d[42m [49m(B[m[?12l[?25h[?25le[42m [49m(B[m[?12l[?25h[?25lc[42m [49m(B[m[?12l[?25h[?25lh[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[34mecho(B[0m[42m [49m(B[m[?12l[?25h[?25l[C[42m [49m(B[m[?12l[?25h[?25l "[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m""(B[0m[42m [49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mH"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mp"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33mo"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mm"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mw"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33me"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m "(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33md"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mi"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mr"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33me"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mc"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mt"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mr"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mo"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33m"(B[0m[42m [49m(B[m[K[?12l[?25h[?25l(B[0;1m[33mo"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mr"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33my"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m:"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m "(B[0m[42m [49m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[12;23H[?12l[?25h[?25l[A[?12l[?25h[?25l[10;16H[?12l[?25h[?25l[A[?12l[?25h[?25l[8;23H[?12l[?25h[?25l[A[?12l[?25h[?25l[8;23H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m :"[39m(B[m pwd[33G[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m pwd[34G[?12l[?25h[?25l[C[?12l[?25h[?25l[9d[?12l[?25h[?25l[10;16H[?12l[?25h[?25l[11d[?12l[?25h[?25l[12;25H[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l  [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$H[39m(B[m[?12l[?25h[?25l(B[0;1m[31mO[39m(B[m[?12l[?25h[?25l,[?12l[?25h[?25l [?12l[?25h[?25l(B[0;1m[31mM[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[36m#[39m(B[m[?12l[?25h[?25l[36mC[39m(B[m[?12l[?25h[?25l[36mu[39m(B[m[?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[36my[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m w[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[36m l[39m(B[m[?12l[?25h[?25l[36mo[39m(B[m[?12l[?25h[?25l[36mg[39m(B[m[?12l[?25h[?25l[36mg[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36md[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m i[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m u[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mL"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mo"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mg"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mgg"[39m(B[m[?12l[?25h[?25l(B[0;1m[33me"[39m(B[m[?12l[?25h[?25l(B[0;1m[33md"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l(B[0;1m[33mi"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mn"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l(B[0;1m[33mu"[39m(B[m[?12l[?25h[?25l(B[0;1m[33ms"[39m(B[m[?12l[?25h[?25l(B[0;1m[33me"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mr"[39m(B[m[?12l[?25h[?25l(B[0;1m[33ms"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l w[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[36m#[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33mNLogged in users "[39m(B[m who[8G[?12l[?25h[?25l(B[0;1m[33muLogged in users "[39m(B[m who[16;9H[?12l[?25h[?25l(B[0;1m[33mmLogged in users "[39m(B[m who[16;10H[?12l[?25h[?25l(B[0;1m[33mbLogged in users "[39m(B[m who[16;11H[?12l[?25h[?25l(B[0;1m[33meLogged in users "[39m(B[m who[16;12H[?12l[?25h[?25l(B[0;1m[33mrLogged in users "[39m(B[m who[16;13H[?12l[?25h[?25l(B[0;1m[33m Logged in users "[39m(B[m who[16;14H[?12l[?25h[?25l(B[0;1m[33moLogged in users "[39m(B[m who[16;15H[?12l[?25h[?25l(B[0;1m[33mfLogged in users "[39m(B[m who[16;16H[?12l[?25h[?25l(B[0;1m[33m Logged in users "[39m(B[m who[16;17H[?12l[?25h[?25l(B[0;1m[33mlLogged in users "[39m(B[m who[16;18H[?12l[?25h[?25l(B[0;1m[33moLogged in users "[39m(B[m who[16;19H[?12l[?25h[?25l(B[0;1m[33mgLogged in users "[39m(B[m who[16;20H[?12l[?25h[?25l(B[0;1m[33mggLogged in users "[39m(B[m who[16;21H[?12l[?25h[?25l[1P[C[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[17d[?12l[?25h[?25l[18;2H[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mc[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36mP[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l'[?12l[?25h[?25l[?12l[?25h[?25l'[?12l[?25h[?25l [?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mP"[39m(B[m[?12l[?25h[?25l(B[0;1m[33ma"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mt"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mh"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m:"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$p[39m(B[m[?12l[?25h[?25l(B[0;1m[31ma[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[32m$[39m(B[m[K[?12l[?25h[?25l(B[0;1m[31m$P[39m(B[m[?12l[?25h[?25l(B[0;1m[31mA[39m(B[m[?12l[?25h[?25l(B[0;1m[31mT[39m(B[m[?12l[?25h[?25l(B[0;1m[31mH[39m(B[m[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[36m#[39m(B[m[?12l[?25h[?25l[36mS[39m(B[m[?12l[?25h[?25l[36mH[39m(B[m[?12l[?25h[?25l[36mE[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36mH[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mH"[39m(B[m[?12l[?25h[?25l(B[0;1m[33me"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l"[K[?12l[?25h[?25l"[K[?12l[?25h[?25l"[K[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[C"[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mS"[39m(B[m"[?12l[?25h[?25l(B[0;1m[33mh"[39m(B[m"[?12l[?25h[?25l(B[0;1m[33me"[39m(B[m"[?12l[?25h[?25l(B[0;1m[33ml"[39m(B[m"[?12l[?25h[?25l(B[0;1m[33mll"[39m(B[m"[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l(B[0;1m[33m:"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$s[39m(B[m[?12l[?25h[?25l[32m$[39m(B[m[K[?12l[?25h[?25l(B[0;1m[31m$s[39m(B[m[?12l[?25h[?25l[32m$[39m(B[m[K[?12l[?25h[?25l(B[0;1m[31m$S[39m(B[m[?12l[?25h[?25l(B[0;1m[31mH[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l(B[0;1m[31mL[39m(B[m[?12l[?25h[?25l(B[0;1m[31mL[39m(B[m[?12l[?25h[?25l[25d[?12l[?25h[?25l[1;85H[41;37H(B[0;7m[ Writing... ](B[m[1;77H(B[0;7m        (B[m[41;35H(B[0;7m[ Wrote 24 lines ](B[m[25d[?12l[?25h[?25l[41d[J[43;86H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh[7Pclear[K[K[K[KH,O[K[K[Khmod +x foss.sh
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ chmod +x foss.sh[1Pfoss.sh[1Pfoss.sh[1Pfoss.sh[1Pfoss.sh[1Pfoss.sh[1Pfoss.sh[1Pfoss.sh[1Pfoss.sh[1Pfoss.sh.foss.sh/foss.sh
+[?25l[?7l[0m[31m[1m            .-/+oossssoo+/-.
+        `:+ssssssssssssssssss+:`
+      -+ssssssssssssssssssyyssss+-
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+   /sssssssssss[37m[0m[1mhdmmNNmmyNMMMMh[0m[31m[1mssssss/
+  +sssssssss[37m[0m[1mhm[0m[31m[1myd[37m[0m[1mMMMMMMMNddddy[0m[31m[1mssssssss+
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhmNMMMNh[0m[31m[1mssssssss/
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1mssssssssssssss[37m[0m[1mhmmmh[0m[31m[1mssssssso
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhdNMMMNh[0m[31m[1mssssssss/
+  +sssssssss[37m[0m[1mdm[0m[31m[1myd[37m[0m[1mMMMMMMMMddddy[0m[31m[1mssssssss+
+   /sssssssssss[37m[0m[1mhdmNNNNmyNMMMMh[0m[31m[1mssssss/
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+      -+sssssssssssssssss[37m[0m[1myyy[0m[31m[1mssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.[0m
+[20A[9999999D[43C[0m[1m[31m[1marjun[0m@[31m[1mvivobook[0m 
+[43C[0m--------------[0m 
+[43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 19.10 x86_64[0m 
+[43C[0m[31m[1mHost[0m[0m:[0m VivoBook_ASUSLaptop X411QA_X411QA 1.0[0m 
+[43C[0m[31m[1mKernel[0m[0m:[0m 5.3.0-18-generic[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 27 mins[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1745 (dpkg), 11 (snap)[0m 
+[43C[0m[31m[1mShell[0m[0m:[0m bash 5.0.3[0m 
+[43C[0m[31m[1mResolution[0m[0m:[0m 1920x1080[0m 
+[43C[0m[31m[1mDE[0m[0m:[0m GNOME 3.34.1[0m 
+[43C[0m[31m[1mWM[0m[0m:[0m GNOME Shell[0m 
+[43C[0m[31m[1mWM Theme[0m[0m:[0m Adwaita[0m 
+[43C[0m[31m[1mTheme[0m[0m:[0m Yaru-dark [GTK2/3][0m 
+[43C[0m[31m[1mIcons[0m[0m:[0m Citrus-blue [GTK2/3][0m 
+[43C[0m[31m[1mTerminal[0m[0m:[0m script[0m 
+[43C[0m[31m[1mCPU[0m[0m:[0m AMD A12-9720P RADEON R7 4C+8G (4) @ 2.700GHz[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m AMD ATI Radeon R5/R6/R7 Graphics[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1853MiB / 3871MiB[0m 
+
+[43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [0m
+
+
+[?25h[?7hPresent working directory:  pwd
+Home directory:  /home/arjun
+Number of Logged in users  who
+Path:  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Shell:  /bin/bash
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ ./foss.shchmod +x foss.sh[4Pnano[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;37H(B[0;7m[ Reading... ](B[m[41;35H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 4.3                           foss.sh                                      [1;85H(B[m[42d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[43d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[41d[2d[39;49m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Present working directory: "[39m(B[m pwd[10d[36m#Home directory[12d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Home directory: "[39m(B[m  (B[0;1m[31m$HOME[14d(B[0m[36m#Currently logged in users[16d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Number of Logged in users "[39m(B[m who[18d[36m#Path[20d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Path: "[39m(B[m (B[0;1m[31m$PATH[22d(B[0m[36m#Shell[24d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Shell: "[39m(B[m (B[0;1m[31m$SHELL[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[16d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[41d[K[16;7H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25lw[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25l[1;77H(B[0;7mModified(B[m[16;38H[32m\[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[1;85H[41;37H(B[0;7m[ Writing... ](B[m[1;77H(B[0;7m        (B[m[41;35H(B[0;7m[ Wrote 24 lines ](B[m[16;36H[?12l[?25h[?25l[41d[J[43;86H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh[K[K[K[K[K[K[K[K[K[K[K[Kclear
+[H[2J[3J]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ clearnano foss.sh[3P./foss.sh
+[?25l[?7l[0m[31m[1m            .-/+oossssoo+/-.
+        `:+ssssssssssssssssss+:`
+      -+ssssssssssssssssssyyssss+-
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+   /sssssssssss[37m[0m[1mhdmmNNmmyNMMMMh[0m[31m[1mssssss/
+  +sssssssss[37m[0m[1mhm[0m[31m[1myd[37m[0m[1mMMMMMMMNddddy[0m[31m[1mssssssss+
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhmNMMMNh[0m[31m[1mssssssss/
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1mssssssssssssss[37m[0m[1mhmmmh[0m[31m[1mssssssso
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhdNMMMNh[0m[31m[1mssssssss/
+  +sssssssss[37m[0m[1mdm[0m[31m[1myd[37m[0m[1mMMMMMMMMddddy[0m[31m[1mssssssss+
+   /sssssssssss[37m[0m[1mhdmNNNNmyNMMMMh[0m[31m[1mssssss/
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+      -+sssssssssssssssss[37m[0m[1myyy[0m[31m[1mssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.[0m
+[20A[9999999D[43C[0m[1m[31m[1marjun[0m@[31m[1mvivobook[0m 
+[43C[0m--------------[0m 
+[43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 19.10 x86_64[0m 
+[43C[0m[31m[1mHost[0m[0m:[0m VivoBook_ASUSLaptop X411QA_X411QA 1.0[0m 
+[43C[0m[31m[1mKernel[0m[0m:[0m 5.3.0-18-generic[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 28 mins[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1745 (dpkg), 11 (snap)[0m 
+[43C[0m[31m[1mShell[0m[0m:[0m bash 5.0.3[0m 
+[43C[0m[31m[1mResolution[0m[0m:[0m 1920x1080[0m 
+[43C[0m[31m[1mDE[0m[0m:[0m GNOME 3.34.1[0m 
+[43C[0m[31m[1mWM[0m[0m:[0m GNOME Shell[0m 
+[43C[0m[31m[1mWM Theme[0m[0m:[0m Adwaita[0m 
+[43C[0m[31m[1mTheme[0m[0m:[0m Yaru-dark [GTK2/3][0m 
+[43C[0m[31m[1mIcons[0m[0m:[0m Citrus-blue [GTK2/3][0m 
+[43C[0m[31m[1mTerminal[0m[0m:[0m script[0m 
+[43C[0m[31m[1mCPU[0m[0m:[0m AMD A12-9720P RADEON R7 4C+8G (4) @ 2.700GHz[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m AMD ATI Radeon R5/R6/R7 Graphics[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1852MiB / 3871MiB[0m 
+
+[43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [0m
+
+
+[?25h[?7hPresent working directory:  pwd
+Home directory:  /home/arjun
+Number of Logged in users  w
+Path:  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Shell:  /bin/bash
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ ./foss.sh[4Pclearnano foss.sh[3P./foss.shchmod +x foss.sh[4Pnano[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;37H(B[0;7m[ Reading... ](B[m[41;35H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 4.3                           foss.sh                                      [1;85H(B[m[42d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[43d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[41d[2d[39;49m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Present working directory: "[39m(B[m pwd[10d[36m#Home directory[12d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Home directory: "[39m(B[m  (B[0;1m[31m$HOME[14d(B[0m[36m#Currently logged in users[16d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Number of Logged in users "[39m(B[m w[18d[36m#Path[20d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Path: "[39m(B[m (B[0;1m[31m$PATH[22d(B[0m[36m#Shell[24d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Shell: "[39m(B[m (B[0;1m[31m$SHELL[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[41d[K[8;21H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[1;77H(B[0;7mModified(B[m[9;41r[9;1HM[1;43r[8;35H[42m [49m(B[m[K[9dpwd[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[C[?12l[?25h[?25l[A[?12l[?25h[?25l[19d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l7[18;41r8[18dM[1;43r[17;34H[42m [49m(B[m[K[18dw[?12l[?25h[?25l7[18;41r8M[1;43r[19;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l7[9;41r8M[1;43r[10;1H[?12l[?25h[?25l[11d[?12l[?25h[?25l[1;85H[41;37H(B[0;7m[ Writing... ](B[m[1;77H(B[0;7m        (B[m[41;35H(B[0;7m[ Wrote 28 lines ](B[m[11d[?12l[?25h[?25l[41d[J[43;86H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh[3P./foss.sh
+[?25l[?7l[0m[31m[1m            .-/+oossssoo+/-.
+        `:+ssssssssssssssssss+:`
+      -+ssssssssssssssssssyyssss+-
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+   /sssssssssss[37m[0m[1mhdmmNNmmyNMMMMh[0m[31m[1mssssss/
+  +sssssssss[37m[0m[1mhm[0m[31m[1myd[37m[0m[1mMMMMMMMNddddy[0m[31m[1mssssssss+
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhmNMMMNh[0m[31m[1mssssssss/
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1mssssssssssssss[37m[0m[1mhmmmh[0m[31m[1mssssssso
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhdNMMMNh[0m[31m[1mssssssss/
+  +sssssssss[37m[0m[1mdm[0m[31m[1myd[37m[0m[1mMMMMMMMMddddy[0m[31m[1mssssssss+
+   /sssssssssss[37m[0m[1mhdmNNNNmyNMMMMh[0m[31m[1mssssss/
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+      -+sssssssssssssssss[37m[0m[1myyy[0m[31m[1mssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.[0m
+[20A[9999999D[43C[0m[1m[31m[1marjun[0m@[31m[1mvivobook[0m 
+[43C[0m--------------[0m 
+[43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 19.10 x86_64[0m 
+[43C[0m[31m[1mHost[0m[0m:[0m VivoBook_ASUSLaptop X411QA_X411QA 1.0[0m 
+[43C[0m[31m[1mKernel[0m[0m:[0m 5.3.0-18-generic[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 29 mins[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1745 (dpkg), 11 (snap)[0m 
+[43C[0m[31m[1mShell[0m[0m:[0m bash 5.0.3[0m 
+[43C[0m[31m[1mResolution[0m[0m:[0m 1920x1080[0m 
+[43C[0m[31m[1mDE[0m[0m:[0m GNOME 3.34.1[0m 
+[43C[0m[31m[1mWM[0m[0m:[0m GNOME Shell[0m 
+[43C[0m[31m[1mWM Theme[0m[0m:[0m Adwaita[0m 
+[43C[0m[31m[1mTheme[0m[0m:[0m Yaru-dark [GTK2/3][0m 
+[43C[0m[31m[1mIcons[0m[0m:[0m Citrus-blue [GTK2/3][0m 
+[43C[0m[31m[1mTerminal[0m[0m:[0m script[0m 
+[43C[0m[31m[1mCPU[0m[0m:[0m AMD A12-9720P RADEON R7 4C+8G (4) @ 2.700GHz[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m AMD ATI Radeon R5/R6/R7 Graphics[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1853MiB / 3871MiB[0m 
+
+[43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [0m
+
+
+[?25h[?7hPresent working directory: 
+/home/arjun/ceccs18c11/cs232/0504
+Home directory:  /home/arjun
+Number of Logged in users 
+ 16:47:56 up 29 min,  1 user,  load average: 0.60, 0.73, 0.75
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+arjun    :0       :0               16:20   ?xdm?   6:03   0.01s /usr/lib/gdm3/gdm-x-s
+Path:  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Shell:  /bin/bash
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ clear
+[H[2J[3J]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ clear./foss.shnano foss.sh
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;37H(B[0;7m[ Reading... ](B[m[41;35H(B[0;7m[ Read 28 lines ](B[m[H(B[0;7m  GNU nano 4.3                           foss.sh                                      [1;85H(B[m[42d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[43d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[41d[2d[39;49m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Present working directory: "(B[0m[42m [10d[49m(B[mpwd[12d[36m#Home directory[14d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Home directory: "[39m(B[m  (B[0;1m[31m$HOME[16d(B[0m[36m#Currently logged in users[18d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Number of Logged in users "(B[0m[42m [20d[49m(B[mw[22d[36m#Path[24d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Path: "[39m(B[m (B[0;1m[31m$PATH[26d(B[0m[36m#Shell[28d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Shell: "[39m(B[m (B[0;1m[31m$SHELL[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[41d[K[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;77H(B[0;7mModified(B[m[30d[36m#[39m(B[m[?12l[?25h[?25l[36mU[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mr[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m d[39m(B[m[?12l[?25h[?25l[36me[39m(B[m[?12l[?25h[?25l[36mt[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36mu[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36ml[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25lp[?12l[?25h[?25l [?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mU"[39m(B[m[?12l[?25h[?25l(B[0;1m[33ms"[39m(B[m[?12l[?25h[?25l(B[0;1m[33me"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mr"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mn"[39m(B[m[?12l[?25h[?25l(B[0;1m[33ma"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mm"[39m(B[m[?12l[?25h[?25l(B[0;1m[33me"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m:"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$U[39m(B[m[?12l[?25h[?25l(B[0;1m[31mS[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l(B[0;1m[31mR[39m(B[m[?12l[?25h[?25l(B[0;1m[31mN[39m(B[m[?12l[?25h[?25l(B[0;1m[31mA[39m(B[m[?12l[?25h[?25l(B[0;1m[31mM[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l[35d[?12l[?25h[?25l[36d[?12l[?25h[?25lE[?12l[?25h[?25lC[?12l[?25h[?25lH[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mu"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33mL"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mo"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mg"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mu"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m="[39m(B[m[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33mi"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mn"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l(B[0;1m[33mn"[39m(B[m[?12l[?25h[?25l(B[0;1m[33ma"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mm"[39m(B[m[?12l[?25h[?25l(B[0;1m[33me"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m:"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[37d[?12l[?25h[?25l[38d[?12l[?25h[?25l[32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$L[39m(B[m[?12l[?25h[?25l(B[0;1m[31mO[39m(B[m[?12l[?25h[?25l(B[0;1m[31mG[39m(B[m[?12l[?25h[?25l(B[0;1m[31mN[39m(B[m[?12l[?25h[?25l(B[0;1m[31mA[39m(B[m[?12l[?25h[?25l(B[0;1m[31mM[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l[39d[?12l[?25h[?25l[1;85H[41;37H(B[0;7m[ Writing... ](B[m[1;77H(B[0;7m        (B[m[41;35H(B[0;7m[ Wrote 38 lines ](B[m[39d[?12l[?25h[?25l[41d[J[43;86H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh[7Pclear./foss.sh
+[?25l[?7l[0m[31m[1m            .-/+oossssoo+/-.
+        `:+ssssssssssssssssss+:`
+      -+ssssssssssssssssssyyssss+-
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+   /sssssssssss[37m[0m[1mhdmmNNmmyNMMMMh[0m[31m[1mssssss/
+  +sssssssss[37m[0m[1mhm[0m[31m[1myd[37m[0m[1mMMMMMMMNddddy[0m[31m[1mssssssss+
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhmNMMMNh[0m[31m[1mssssssss/
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1mssssssssssssss[37m[0m[1mhmmmh[0m[31m[1mssssssso
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhdNMMMNh[0m[31m[1mssssssss/
+  +sssssssss[37m[0m[1mdm[0m[31m[1myd[37m[0m[1mMMMMMMMMddddy[0m[31m[1mssssssss+
+   /sssssssssss[37m[0m[1mhdmNNNNmyNMMMMh[0m[31m[1mssssss/
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+      -+sssssssssssssssss[37m[0m[1myyy[0m[31m[1mssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.[0m
+[20A[9999999D[43C[0m[1m[31m[1marjun[0m@[31m[1mvivobook[0m 
+[43C[0m--------------[0m 
+[43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 19.10 x86_64[0m 
+[43C[0m[31m[1mHost[0m[0m:[0m VivoBook_ASUSLaptop X411QA_X411QA 1.0[0m 
+[43C[0m[31m[1mKernel[0m[0m:[0m 5.3.0-18-generic[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 30 mins[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1745 (dpkg), 11 (snap)[0m 
+[43C[0m[31m[1mShell[0m[0m:[0m bash 5.0.3[0m 
+[43C[0m[31m[1mResolution[0m[0m:[0m 1920x1080[0m 
+[43C[0m[31m[1mDE[0m[0m:[0m GNOME 3.34.1[0m 
+[43C[0m[31m[1mWM[0m[0m:[0m GNOME Shell[0m 
+[43C[0m[31m[1mWM Theme[0m[0m:[0m Adwaita[0m 
+[43C[0m[31m[1mTheme[0m[0m:[0m Yaru-dark [GTK2/3][0m 
+[43C[0m[31m[1mIcons[0m[0m:[0m Citrus-blue [GTK2/3][0m 
+[43C[0m[31m[1mTerminal[0m[0m:[0m script[0m 
+[43C[0m[31m[1mCPU[0m[0m:[0m AMD A12-9720P RADEON R7 4C+8G (4) @ 2.700GHz[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m AMD ATI Radeon R5/R6/R7 Graphics[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1859MiB / 3871MiB[0m 
+
+[43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [0m
+
+
+[?25h[?7hPresent working directory: 
+/home/arjun/ceccs18c11/cs232/0504
+Home directory:  /home/arjun
+Number of Logged in users 
+ 16:49:36 up 30 min,  1 user,  load average: 0.39, 0.62, 0.71
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+arjun    :0       :0               16:20   ?xdm?   6:11   0.01s /usr/lib/gdm3/gdm-x-s
+Path:  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Shell:  /bin/bash
+Username: 
+./foss.sh: line 33: arjun: command not found
+Login name: 
+./foss.sh: line 37: arjun: command not found
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ ./foss.shnano foss.sh
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;37H(B[0;7m[ Reading... ](B[m[41;35H(B[0;7m[ Read 38 lines ](B[m[H(B[0;7m  GNU nano 4.3                           foss.sh                                      [1;85H(B[m[42d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[43d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[41d[2d[39;49m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Present working directory: "(B[0m[42m [10d[49m(B[mpwd[12d[36m#Home directory[14d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Home directory: "[39m(B[m  (B[0;1m[31m$HOME[16d(B[0m[36m#Currently logged in users[18d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Number of Logged in users "(B[0m[42m [20d[49m(B[mw[22d[36m#Path[24d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Path: "[39m(B[m (B[0;1m[31m$PATH[26d(B[0m[36m#Shell[28d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Shell: "[39m(B[m (B[0;1m[31m$SHELL[30d(B[0m[36m#User details[32d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Username: "[34d[31m$USERNAME[36d[34mecho[39m(B[m (B[0;1m[33m"Login name: "[38d[31m$LOGNAME[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[41d[K[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l[36d[?12l[?25h[?25l[37d[?12l[?25h[?25l[38d[?12l[?25h[?25l[1;77H(B[0;7mModified(B[m[37;41r[41;1H
+[1;43r[37;1H[?12l[?25h[?25l[36;20H(B[0;1m[31m$LOGNAME[37d[39m(B[m[K[36;20H[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[6G"Login name[32m:[39m(B[m [1P[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[37d[?12l[?25h[?25l[38d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[36;27H[?12l[?25h[?25l[6G(B[0;1m[33m"Login name: $LOGNAME"[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[1;85H[41;37H(B[0;7m[ Writing... ](B[m[1;77H(B[0;7m        (B[m[41;35H(B[0;7m[ Wrote 36 lines ](B[m[35d[?12l[?25h[?25l[34;10H[?12l[?25h[?25l[41d[J[43;86H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh[3P./foss.sh
+[?25l[?7l[0m[31m[1m            .-/+oossssoo+/-.
+        `:+ssssssssssssssssss+:`
+      -+ssssssssssssssssssyyssss+-
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+   /sssssssssss[37m[0m[1mhdmmNNmmyNMMMMh[0m[31m[1mssssss/
+  +sssssssss[37m[0m[1mhm[0m[31m[1myd[37m[0m[1mMMMMMMMNddddy[0m[31m[1mssssssss+
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhmNMMMNh[0m[31m[1mssssssss/
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1mssssssssssssss[37m[0m[1mhmmmh[0m[31m[1mssssssso
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhdNMMMNh[0m[31m[1mssssssss/
+  +sssssssss[37m[0m[1mdm[0m[31m[1myd[37m[0m[1mMMMMMMMMddddy[0m[31m[1mssssssss+
+   /sssssssssss[37m[0m[1mhdmNNNNmyNMMMMh[0m[31m[1mssssss/
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+      -+sssssssssssssssss[37m[0m[1myyy[0m[31m[1mssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.[0m
+[20A[9999999D[43C[0m[1m[31m[1marjun[0m@[31m[1mvivobook[0m 
+[43C[0m--------------[0m 
+[43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 19.10 x86_64[0m 
+[43C[0m[31m[1mHost[0m[0m:[0m VivoBook_ASUSLaptop X411QA_X411QA 1.0[0m 
+[43C[0m[31m[1mKernel[0m[0m:[0m 5.3.0-18-generic[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 31 mins[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1745 (dpkg), 11 (snap)[0m 
+[43C[0m[31m[1mShell[0m[0m:[0m bash 5.0.3[0m 
+[43C[0m[31m[1mResolution[0m[0m:[0m 1920x1080[0m 
+[43C[0m[31m[1mDE[0m[0m:[0m GNOME 3.34.1[0m 
+[43C[0m[31m[1mWM[0m[0m:[0m GNOME Shell[0m 
+[43C[0m[31m[1mWM Theme[0m[0m:[0m Adwaita[0m 
+[43C[0m[31m[1mTheme[0m[0m:[0m Yaru-dark [GTK2/3][0m 
+[43C[0m[31m[1mIcons[0m[0m:[0m Citrus-blue [GTK2/3][0m 
+[43C[0m[31m[1mTerminal[0m[0m:[0m script[0m 
+[43C[0m[31m[1mCPU[0m[0m:[0m AMD A12-9720P RADEON R7 4C+8G (4) @ 2.700GHz[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m AMD ATI Radeon R5/R6/R7 Graphics[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1854MiB / 3871MiB[0m 
+
+[43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [0m
+
+
+[?25h[?7hPresent working directory: 
+/home/arjun/ceccs18c11/cs232/0504
+Home directory:  /home/arjun
+Number of Logged in users 
+ 16:50:05 up 31 min,  1 user,  load average: 0.42, 0.61, 0.70
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+arjun    :0       :0               16:20   ?xdm?   6:14   0.01s /usr/lib/gdm3/gdm-x-s
+Path:  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Shell:  /bin/bash
+Username: 
+./foss.sh: line 33: arjun: command not found
+Login name: arjun
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ ./foss.shnano foss.sh
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;37H(B[0;7m[ Reading... ](B[m[41;35H(B[0;7m[ Read 36 lines ](B[m[H(B[0;7m  GNU nano 4.3                           foss.sh                                      [1;85H(B[m[42d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[43d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[41d[2d[39;49m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Present working directory: "(B[0m[42m [10d[49m(B[mpwd[12d[36m#Home directory[14d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Home directory: "[39m(B[m  (B[0;1m[31m$HOME[16d(B[0m[36m#Currently logged in users[18d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Number of Logged in users "(B[0m[42m [20d[49m(B[mw[22d[36m#Path[24d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Path: "[39m(B[m (B[0;1m[31m$PATH[26d(B[0m[36m#Shell[28d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Shell: "[39m(B[m (B[0;1m[31m$SHELL[30d(B[0m[36m#User details[32d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Username: "[34d[31m$USERNAME[36d[34mecho[39m(B[m (B[0;1m[33m"Login name: $LOGNAME"[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[41d[K[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[1;77H(B[0;7mModified(B[m[33;41r[41;1H
+[1;43r[33;1H[?12l[?25h[?25l[33;41r[41;1H
+[1;43r[32;18H(B[0;1m[31m$USERNAME[32;18H[39m(B[m[?12l[?25h[?25l[33d[?12l[?25h[?25l[34;18H[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m (B[0;1m[31m$LOGNAME[39m(B[m"[34;19H[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l"[?12l[?25h[?25l[35d[?12l[?25h[?25l[36d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[34;29H[?12l[?25h[?25l [?12l[?25h[?25l[1;85H[41;37H(B[0;7m[ Writing... ](B[m[1;77H(B[0;7m        (B[m[41;35H(B[0;7m[ Wrote 34 lines ](B[m[34;28H[?12l[?25h[?25l[A[?12l[?25h[?25l[32;27H[?12l[?25h[?25l[41d[J[43;86H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh[3P./foss.sh
+[?25l[?7l[0m[31m[1m            .-/+oossssoo+/-.
+        `:+ssssssssssssssssss+:`
+      -+ssssssssssssssssssyyssss+-
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+   /sssssssssss[37m[0m[1mhdmmNNmmyNMMMMh[0m[31m[1mssssss/
+  +sssssssss[37m[0m[1mhm[0m[31m[1myd[37m[0m[1mMMMMMMMNddddy[0m[31m[1mssssssss+
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhmNMMMNh[0m[31m[1mssssssss/
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1mssssssssssssss[37m[0m[1mhmmmh[0m[31m[1mssssssso
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhdNMMMNh[0m[31m[1mssssssss/
+  +sssssssss[37m[0m[1mdm[0m[31m[1myd[37m[0m[1mMMMMMMMMddddy[0m[31m[1mssssssss+
+   /sssssssssss[37m[0m[1mhdmNNNNmyNMMMMh[0m[31m[1mssssss/
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+      -+sssssssssssssssss[37m[0m[1myyy[0m[31m[1mssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.[0m
+[20A[9999999D[43C[0m[1m[31m[1marjun[0m@[31m[1mvivobook[0m 
+[43C[0m--------------[0m 
+[43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 19.10 x86_64[0m 
+[43C[0m[31m[1mHost[0m[0m:[0m VivoBook_ASUSLaptop X411QA_X411QA 1.0[0m 
+[43C[0m[31m[1mKernel[0m[0m:[0m 5.3.0-18-generic[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 31 mins[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1745 (dpkg), 11 (snap)[0m 
+[43C[0m[31m[1mShell[0m[0m:[0m bash 5.0.3[0m 
+[43C[0m[31m[1mResolution[0m[0m:[0m 1920x1080[0m 
+[43C[0m[31m[1mDE[0m[0m:[0m GNOME 3.34.1[0m 
+[43C[0m[31m[1mWM[0m[0m:[0m GNOME Shell[0m 
+[43C[0m[31m[1mWM Theme[0m[0m:[0m Adwaita[0m 
+[43C[0m[31m[1mTheme[0m[0m:[0m Yaru-dark [GTK2/3][0m 
+[43C[0m[31m[1mIcons[0m[0m:[0m Citrus-blue [GTK2/3][0m 
+[43C[0m[31m[1mTerminal[0m[0m:[0m script[0m 
+[43C[0m[31m[1mCPU[0m[0m:[0m AMD A12-9720P RADEON R7 4C+8G (4) @ 2.700GHz[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m AMD ATI Radeon R5/R6/R7 Graphics[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1854MiB / 3871MiB[0m 
+
+[43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [0m
+
+
+[?25h[?7hPresent working directory: 
+/home/arjun/ceccs18c11/cs232/0504
+Home directory:  /home/arjun
+Number of Logged in users 
+ 16:50:29 up 31 min,  1 user,  load average: 0.37, 0.59, 0.69
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+arjun    :0       :0               16:20   ?xdm?   6:16   0.01s /usr/lib/gdm3/gdm-x-s
+Path:  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Shell:  /bin/bash
+Username: arjun
+Login name: arjun
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ ./foss.shnano foss.sh
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;37H(B[0;7m[ Reading... ](B[m[41;35H(B[0;7m[ Read 34 lines ](B[m[H(B[0;7m  GNU nano 4.3                           foss.sh                                      [1;85H(B[m[42d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[43d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[41d[2d[39;49m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Present working directory: "(B[0m[42m [10d[49m(B[mpwd[12d[36m#Home directory[14d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Home directory: "[39m(B[m  (B[0;1m[31m$HOME[16d(B[0m[36m#Currently logged in users[18d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Number of Logged in users "(B[0m[42m [20d[49m(B[mw[22d[36m#Path[24d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Path: "[39m(B[m (B[0;1m[31m$PATH[26d(B[0m[36m#Shell[28d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Shell: "[39m(B[m (B[0;1m[31m$SHELL[30d(B[0m[36m#User details[32d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Username: "[31m$USERNAME[34d[34mecho[39m(B[m (B[0;1m[33m"Login name:"[39m(B[m (B[0;1m[31m$LOGNAME[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[41d[K[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[1;77H(B[0;7mModified(B[m[21;41r[21;1HM[1;43r[22;1H[?12l[?25h[?25lE[?12l[?25h[?25lC[?12l[?25h[?25lH[?12l[?25h[?25lO[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m\"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mn"[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l7[23;41r8[23dM[1;43r[23;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[26d[?12l[?25h[?25l[25;41r[25;1HM[1;43r[27;1H[?12l[?25h[?25l[28d[?12l[?25h[?25l7[28;41r8M[1;43r[29;1H[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m\"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mn"[39m(B[m[?12l[?25h[?25l7[30;41r8[30dM[1;43r[29;6H"[32m\[39m(B[mn[K[30d"[?12l[?25h[?25l[1;85H[41;37H(B[0;7m[ Writing... ](B[m[1;77H(B[0;7m        (B[m[41;35H(B[0;7m[ Wrote 39 lines ](B[m[30d[?12l[?25h[?25l[41d[J[43;86H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh[3P./foss.sh
+[?25l[?7l[0m[31m[1m            .-/+oossssoo+/-.
+        `:+ssssssssssssssssss+:`
+      -+ssssssssssssssssssyyssss+-
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+   /sssssssssss[37m[0m[1mhdmmNNmmyNMMMMh[0m[31m[1mssssss/
+  +sssssssss[37m[0m[1mhm[0m[31m[1myd[37m[0m[1mMMMMMMMNddddy[0m[31m[1mssssssss+
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhmNMMMNh[0m[31m[1mssssssss/
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1mssssssssssssss[37m[0m[1mhmmmh[0m[31m[1mssssssso
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhdNMMMNh[0m[31m[1mssssssss/
+  +sssssssss[37m[0m[1mdm[0m[31m[1myd[37m[0m[1mMMMMMMMMddddy[0m[31m[1mssssssss+
+   /sssssssssss[37m[0m[1mhdmNNNNmyNMMMMh[0m[31m[1mssssss/
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+      -+sssssssssssssssss[37m[0m[1myyy[0m[31m[1mssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.[0m
+[20A[9999999D[43C[0m[1m[31m[1marjun[0m@[31m[1mvivobook[0m 
+[43C[0m--------------[0m 
+[43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 19.10 x86_64[0m 
+[43C[0m[31m[1mHost[0m[0m:[0m VivoBook_ASUSLaptop X411QA_X411QA 1.0[0m 
+[43C[0m[31m[1mKernel[0m[0m:[0m 5.3.0-18-generic[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 32 mins[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1745 (dpkg), 11 (snap)[0m 
+[43C[0m[31m[1mShell[0m[0m:[0m bash 5.0.3[0m 
+[43C[0m[31m[1mResolution[0m[0m:[0m 1920x1080[0m 
+[43C[0m[31m[1mDE[0m[0m:[0m GNOME 3.34.1[0m 
+[43C[0m[31m[1mWM[0m[0m:[0m GNOME Shell[0m 
+[43C[0m[31m[1mWM Theme[0m[0m:[0m Adwaita[0m 
+[43C[0m[31m[1mTheme[0m[0m:[0m Yaru-dark [GTK2/3][0m 
+[43C[0m[31m[1mIcons[0m[0m:[0m Citrus-blue [GTK2/3][0m 
+[43C[0m[31m[1mTerminal[0m[0m:[0m script[0m 
+[43C[0m[31m[1mCPU[0m[0m:[0m AMD A12-9720P RADEON R7 4C+8G (4) @ 2.700GHz[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m AMD ATI Radeon R5/R6/R7 Graphics[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1856MiB / 3871MiB[0m 
+
+[43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [0m
+
+
+[?25h[?7hPresent working directory: 
+/home/arjun/ceccs18c11/cs232/0504
+Home directory:  /home/arjun
+Number of Logged in users 
+ 16:51:20 up 32 min,  1 user,  load average: 0.34, 0.53, 0.66
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+arjun    :0       :0               16:20   ?xdm?   6:21   0.01s /usr/lib/gdm3/gdm-x-s
+\n
+Path:  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+\n
+
+Shell:  /bin/bash
+Username: arjun
+Login name: arjun
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ ./foss.shnano foss.sh
+[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;37H(B[0;7m[ Reading... ](B[m[41;35H(B[0;7m[ Read 39 lines ](B[m[H(B[0;7m  GNU nano 4.3                           foss.sh                                      [1;85H(B[m[42d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[43d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[41d[2d[39;49m[36m#Operating system, software and hardware details[4d[39m(B[mneofetch[6d[36m#Working directory[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Present working directory: "(B[0m[42m [10d[49m(B[mpwd[12d[36m#Home directory[14d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Home directory: "[39m(B[m  (B[0;1m[31m$HOME[16d(B[0m[36m#Currently logged in users[18d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Number of Logged in users "(B[0m[42m [20d[49m(B[mw[22d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"\n"[24d(B[0m[36m#Path[27d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Path: "[39m(B[m (B[0;1m[31m$PATH[29d[34mecho[39m(B[m "[32m\[39m(B[mn[30d"[31d[36m#Shell[33d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Shell: "[39m(B[m (B[0;1m[31m$SHELL[35d(B[0m[36m#User details[37d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Username: "[31m$USERNAME[39d[34mecho[39m(B[m (B[0;1m[33m"Login name:"[39m(B[m (B[0;1m[31m$LOGNAME[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[41d[K[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[1;77H(B[0;7mModified(B[m[30;41r[41;1H
+[1;43r[29;6H(B[0;1m[33m"\n"[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l7[30;41r8[30dM[1;43r[30;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l[A[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m""[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m\"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mn"[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l7[35;41r8[35dM[1;43r[35;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[1;85H[41;37H(B[0;7m[ Writing... ](B[m[1;77H(B[0;7m        (B[m[41;35H(B[0;7m[ Wrote 40 lines ](B[m[16d[?12l[?25h[?25l[A[?12l[?25h[?25l[41d[J[43;86H[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ nano foss.sh[3P./foss.shnano foss.sh[K[K[K[K[K[K[K[K[K[K[K[Kcler[Kar
+[H[2J[3J]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ ./foss.sh
+[?25l[?7l[0m[31m[1m            .-/+oossssoo+/-.
+        `:+ssssssssssssssssss+:`
+      -+ssssssssssssssssssyyssss+-
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+   /sssssssssss[37m[0m[1mhdmmNNmmyNMMMMh[0m[31m[1mssssss/
+  +sssssssss[37m[0m[1mhm[0m[31m[1myd[37m[0m[1mMMMMMMMNddddy[0m[31m[1mssssssss+
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhmNMMMNh[0m[31m[1mssssssss/
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1mssssssssssssss[37m[0m[1mhmmmh[0m[31m[1mssssssso
+oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
++ssss[37m[0m[1mhhhyNMMNy[0m[31m[1mssssssssssss[37m[0m[1myNMMMy[0m[31m[1msssssss+
+.ssssssss[37m[0m[1mdMMMNh[0m[31m[1mssssssssss[37m[0m[1mhNMMMd[0m[31m[1mssssssss.
+ /ssssssss[37m[0m[1mhNMMM[0m[31m[1myh[37m[0m[1mhyyyyhdNMMMNh[0m[31m[1mssssssss/
+  +sssssssss[37m[0m[1mdm[0m[31m[1myd[37m[0m[1mMMMMMMMMddddy[0m[31m[1mssssssss+
+   /sssssssssss[37m[0m[1mhdmNNNNmyNMMMMh[0m[31m[1mssssss/
+    .ossssssssssssssssss[37m[0m[1mdMMMNy[0m[31m[1msssso.
+      -+sssssssssssssssss[37m[0m[1myyy[0m[31m[1mssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.[0m
+[20A[9999999D[43C[0m[1m[31m[1marjun[0m@[31m[1mvivobook[0m 
+[43C[0m--------------[0m 
+[43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 19.10 x86_64[0m 
+[43C[0m[31m[1mHost[0m[0m:[0m VivoBook_ASUSLaptop X411QA_X411QA 1.0[0m 
+[43C[0m[31m[1mKernel[0m[0m:[0m 5.3.0-18-generic[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 33 mins[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1745 (dpkg), 11 (snap)[0m 
+[43C[0m[31m[1mShell[0m[0m:[0m bash 5.0.3[0m 
+[43C[0m[31m[1mResolution[0m[0m:[0m 1920x1080[0m 
+[43C[0m[31m[1mDE[0m[0m:[0m GNOME 3.34.1[0m 
+[43C[0m[31m[1mWM[0m[0m:[0m GNOME Shell[0m 
+[43C[0m[31m[1mWM Theme[0m[0m:[0m Adwaita[0m 
+[43C[0m[31m[1mTheme[0m[0m:[0m Yaru-dark [GTK2/3][0m 
+[43C[0m[31m[1mIcons[0m[0m:[0m Citrus-blue [GTK2/3][0m 
+[43C[0m[31m[1mTerminal[0m[0m:[0m script[0m 
+[43C[0m[31m[1mCPU[0m[0m:[0m AMD A12-9720P RADEON R7 4C+8G (4) @ 2.700GHz[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m AMD ATI Radeon R5/R6/R7 Graphics[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1855MiB / 3871MiB[0m 
+
+[43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [0m
+
+
+[?25h[?7hPresent working directory: 
+/home/arjun/ceccs18c11/cs232/0504
+Home directory:  /home/arjun
+Number of Logged in users 
+ 16:52:02 up 33 min,  1 user,  load average: 0.39, 0.53, 0.66
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+arjun    :0       :0               16:20   ?xdm?   6:25   0.01s /usr/lib/gdm3/gdm-x-s
+\n
+Path:  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+\n
+Shell:  /bin/bash
+\n
+Username: arjun
+Login name: arjun
+]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ clear
+[H[2J[3J]0;arjun@vivobook: ~/ceccs18c11/cs232/0504[01;32marjun@vivobook[00m:[01;34m~/ceccs18c11/cs232/0504[00m$ exit
+exit
+
+Script done on 2020-04-05 16:52:20+05:30 [COMMAND_EXIT_CODE="0"]

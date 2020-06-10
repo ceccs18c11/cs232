@@ -1,0 +1,161 @@
+CEC CS18C11
+
+Arjun G Krishna
+
+Public IP : 223.227.50.110
+
+Date: 05-04-2020
+
+--------------------------------
+#1: Aim/task
+
+ Shell script to show various system configuration like
+
+  Currently logged user and their login name
+  Your current shell
+  Your home directory
+  Your operating system type
+  Your current path setting
+  Your current working directory
+  Number of users currently logged in
+
+
+---------------------------------
+Command/Shell script/Program name
+
+#Shell script:
+
+  foss.sh
+
+#Install neofetch
+
+  sudo apt-get install neofetch
+
+#Modify permission
+
+  chmod +x foss.sh
+
+#Run the script
+
+  ./foss.sh
+
+
+
+---------------------------------
+
+--------------------------------
+Output:
+
+#The output of the script is shown in
+
+  image1.png
+
+#The work script is
+
+  work.txt
+
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+
+#2: Aim/task
+
+
+    Shell script to show
+
+    OS and Version, release number and Kernel Version
+    All available shells
+    CPU information like processor type and speed
+    Memory information
+    Hard Disk information like size of Hard disk, cache, model etc
+    Mounted filesystems
+
+---------------------------------
+
+Command/Shell script/Program name
+
+#Shell script:
+
+  os.sh
+
+
+#Modify permission
+
+  chmod +x os.sh
+
+#Install neofetch
+
+  sudo apt-get instll neofetch
+
+#Run script
+
+  ./os.sh
+
+--------------------------------
+Output:
+#The output of the script is shown in
+
+  image2.png
+  image3.png	
+
+#The work script is
+
+  work2.txt
+
+
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
+
+
+
+--------------------------------
+#3: Aim/task
+
+Menu driven calculator using shell script with
+following functions
+
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Modulus
+
+---------------------------------
+Command/Shell script/Program name
+
+#Shell script:
+
+  calculator.sh
+
+#Modify permission
+
+  chmod +x calculator.sh
+
+#Run the script
+
+  ./calculator.sh
+
+
+
+---------------------------------
+
+--------------------------------
+Output:
+
+#The work script is
+
+  work3.txt
+
+-------------------
+Remarks if any:
+
+
+-------------------------------------
+-------------------------------------
